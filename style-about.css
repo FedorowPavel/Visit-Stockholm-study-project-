@@ -1,0 +1,129 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(219, 219, 219);
+}
+
+.about-header {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    
+    color: whitesmoke;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.about-header a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    background-color: rgb(185, 134, 57);
+
+    color: whitesmoke;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.about-header a:hover {
+    background-color: rgb(219, 219, 219);
+    color: black;
+}
+
+.about-content {
+    grid-column: 1/-1;
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-gap: 1px;
+
+    /* border: 1px solid black; */
+    border-bottom: 2px solid gray;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    background-color: rgb(219, 219, 219);
+    color: black;
+}
+.about-content-tittle {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.about-text {
+    text-indent: 20px;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+    grid-column: 2/ span 2;
+}
+
+
+.wide {
+    grid-column: 2/ span 2;
+}
+
+
+
+.wide img {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.wide img:hover {
+    transform: scale(1.3);
+}
+
+.about-image figcaption {
+    color: gray;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+
+.asside-content {
+    grid-column: 4/5;
+    grid-row: 2/9;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+    overflow: hidden;
+}
+
+.asside-content h3,
+.asside-content p {
+    margin: 0;
+}
+
+.about-image figure {
+    margin: 0;
+}
+
+.asside-content img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid  rgb(185, 134, 57);
+}
+
+.asside-content figcaption {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    /* background-color:rgb(185, 134, 57); */
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+
+
