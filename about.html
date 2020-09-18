@@ -12,6 +12,12 @@
 
 
 <body>
+
+    <div class="top-button">
+        <a href="#top"></a>
+        <span></span>
+    </div>
+
     <div class="container">
 
         <!-- ___________________ header-menu__________________ -->
@@ -21,14 +27,16 @@
                 <a href="Index.html"><img src="images/stad.png" alt="stad"></a>
             </div>
 
-            <div class="header-item nav"><a href="about.html" target="blank">About</a>
+            <div class="header-item nav">
+                <a href="about.html" target="blank">About</a>
                 <div class=" header-dropdown">
-                    <a href="#">History</a>
-                    <a href="#">Modern City</a>
+                    <a href="about.html#history">History</a>
+                    <a href="about.html#modern">Modern City</a>
                 </div>
             </div>
 
-            <div class="header-item nav"><a href="entertainment.html" target="blank">Entertainment</a>
+            <div class="header-item nav">
+                <a href="entertainment.html" target="blank">Entertainment</a>
                 <div class="header-dropdown">
                     <a href="#">To see</a>
                     <a href="#">To eat</a>
@@ -36,7 +44,8 @@
                 </div>
             </div>
 
-            <div class="header-item nav"><a href="transport.html" target="blank">Transport</a>
+            <div class="header-item nav">
+                <a href="transport.html" target="blank">Transport</a>
                 <div class="header-dropdown">
                     <a href="#">T-banna</a>
                     <a href="#">Bus</a>
@@ -47,7 +56,8 @@
                 </div>
             </div>
 
-            <div class="header-item nav"><a href="to-stay.html" target="blank">To stay</a>
+            <div class="header-item nav">
+                <a href="to-stay.html" target="blank">To stay</a>
                 <div class="header-dropdown">
                     <a href="#">Hotels</a>
                     <a href="#">Hostels</a>
@@ -69,9 +79,13 @@
 
             </div>
 
+
+            <!-- _____________history________________ -->
+
+
             <div class="about-content history-content">
 
-                <div class="about-content-tittle">
+                <div id="history" class="about-content-tittle">
                     <h1>✦ History of Stockholm ✦</h1>
                 </div>
 
@@ -218,11 +232,12 @@
                 </div>
             </div>
 
-
+            <!-- _______________modern__________________ -->
 
             <div class="about-content modern-content">
 
                 <div class="about-content-tittle" id="modern">
+                    <br>
                     <h1>Modern Stockholm</h1>
 
 
@@ -329,6 +344,48 @@
                         Stockholm by Markus 'Notch'
                         Persson in 2009, and its company Mojang is headquartered there.</p>
                 </div>
+
+                <div class="asside-content modern-asside ">
+                    <h3>Famous Swedes</h3>
+                    <p>modern</p>
+
+                    <figure>
+                        <img src="images/about/famous-1-erling-persson.jpg" alt="Erling Person" title="Erling Person">
+                        <figcaption> <b> Erling Person</b> <br> H&M founder <br> R.I.P</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/about/famous-2-Ingvar Kamprad.jpg" alt="Ingvar Kamprad" title="Ingvar Kamprad">
+                        <figcaption><b>Ingvar Kamprad</b> <br> IKEA founder <br> R.I.P</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/about/famous-3-gretta-tunberg.jpg" alt="Gretta Tunberg" title="Gretta Tunberg">
+                        <figcaption><b>Gretta Tunberg</b> environmental activist</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/about/famous-4-stieg-larrson.jpg" alt="Stieg Larsson" title="Stieg Larsson">
+                        <figcaption><b>Stieg Larsson</b> <br>Writer <br>Millennium trilogy </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/about/famous-5-zlatan-ibrahimovich.jpg" alt="Zlatan Ibrahimovich"
+                            title="Zlatan Ibrahimovich">
+                        <figcaption><b>Zlatan Ibrahimovich</b> <br> footballer</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/about/famous-6-piew-die-pie.jpg" alt="Piew Die Pie" title="Piew Die Pie">
+                        <figcaption><b>Piew Die Pie</b> <br>most subscriebed youtuber
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/about/famous-7-avicci.jpg" alt="Avicci" title="Avicci">
+                        <figcaption><b>Avicci</b> <br> Dj, producer <br> R.I.P </figcaption>
+                    </figure>
+                </div>
             </div>
 
 
@@ -386,6 +443,8 @@
                 <p>2020</p>
             </div>
         </div>
+
+        <script src="up-button.js"></script>
 </body>
 
 </html>

@@ -51,6 +51,10 @@
     background-color: rgb(219, 219, 219);
     color: black;
 }
+.about-content:last-child {
+    border-bottom: none;
+}
+
 .about-content-tittle {
     grid-column: 1/-1;
     text-align: center;
@@ -121,6 +125,17 @@
     /* background-color:rgb(185, 134, 57); */
     text-align: center;
     font-style: italic;
+}
+
+.modern-asside {
+    grid-column: 1/2;
+     grid-row: 2/10;
+}
+
+.modern-asside img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 3px solid  rgb(185, 134, 57);
 }
 
 
