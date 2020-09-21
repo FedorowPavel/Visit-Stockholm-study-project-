@@ -277,10 +277,12 @@ body {
 .entertainment-header {
     box-sizing: border-box;
     position: relative;
+    /* position: sticky;
+    top: 60px; */
     text-align: center;
     
     color: whitesmoke;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
