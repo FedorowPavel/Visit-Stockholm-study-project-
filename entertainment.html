@@ -6,33 +6,39 @@
     <meta charcode="UTF-8">
     <link rel="shortcut icon" href="images/favicon-20-20.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style-index.css">
+    <link rel="stylesheet" type="text/css" href="entertainment.css">
     <link rel="stylesheet" type="text/css" href="common-styles.css">
 </head>
 
 
 <body>
+
+    <div class="top-button">
+        <a href="#top"></a>
+        <span></span>
+    </div>
+
     <div class="container">
 
         <!-- ___________________ header-menu__________________ -->
 
         <div class="header-menu">
             <div class="header-item stad">
-                <a href="#"><img src="images/stad.png" alt="stad"></a>
+                <a href="Index.html"><img src="images/stad.png" alt="stad"></a>
             </div>
 
             <div class="header-item nav"><a href="about.html" target="blank">About</a>
                 <div class=" header-dropdown">
-                    <a href="#">History</a>
-                    <a href="#">Modern City</a>
+                    <a href="about.html#history">History</a>
+                    <a href="about.html#modern">Modern City</a>
                 </div>
             </div>
 
             <div class="header-item nav"><a href="entertainment.html" target="blank">Entertainment</a>
                 <div class="header-dropdown">
-                    <a href="#">To see</a>
-                    <a href="#">To eat</a>
-                    <a href="#">To fun</a>
+                    <a href="entertainment.html#see">To see</a>
+                    <a href="entertainment.html#eat">To eat</a>
+                    <a href="entertainment.html#fun">To fun</a>
                 </div>
             </div>
 
@@ -54,6 +60,70 @@
                     <a href="#">Appartments</a>
                 </div>
             </div>
+
+        </div>
+
+
+        <!-- _________________main-content_____________________ -->
+
+        <div class="entertainment-nav">
+
+            <div class="entertainment-header">
+                <a href="#see">To see</a>
+            </div>
+
+            <div class="entertainment-header">
+                <a href="#eat" target="">To eat</a>
+            </div>
+
+            <div class="entertainment-header">
+                <a href="#fun" target="">To fun</a>
+            </div>
+        </div>
+
+        <div class="entertainment-content">
+            <div class="common-info">
+                <h1>Entertainment</h1>
+                <p> <img src="images/icons/to-see.png" alt="to-see"> The capital of Sweden is a cosmopolitan city with a
+                    tangled old town, stylish young districts, a
+                    dynamic city centre.
+                    Spread across 14 islands on Lake Mälaren, Stockholm’s very environment encourages you to rove
+                    and see where you’ll end
+                    up. There are around 50 bridges in the centre alone, while ferries are a fun way to get about.</p>
+                <p> <img src="images/icons/to-eat.png" alt="to-eat">You’ve probably tried Swedish meatballs at IKEA, and
+                    you may have even heard of Swedish cinnamon
+                    buns. But asides from
+                    that, what is Swedish cuisine? Ask most locals, and they’ll respond saying that a typical dish
+                    at one of the best
+                    restaurants in the city is one that starts off simple, then gets unexpected flavors added
+                    in—think cardamom, saffron and
+                    spoonfuls of jam in unusual places.</p>
+                <p> <img src="images/icons/to-fun.png" alt="to-fun">There are many ways you can enjoy lots of free
+                    things to do in Stockholm and we’ve compiled
+                    activities, local
+                    experiences, and events that appeal to a variety of tastes. Some of these experiences are
+                    seasonal and I’ve denoted them
+                    if so.</p>
+            </div>
+
+            <biv class="main-info">
+                <button id="see" class="accordion-btn">Know what to see</button>
+                <div class="pannel">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, beatae!</p>
+                </div>
+
+                <button id="eat" class="accordion-btn">Know where to eat</button>
+                <div class="pannel">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, beatae!</p>
+                </div>
+
+                <button id="fun" class="accordion-btn">Know how to fun</button>
+                <div class="pannel">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, beatae!</p>
+                </div>
+            </biv>
+
+
 
         </div>
 
@@ -99,6 +169,9 @@
                 <p>2020</p>
             </div>
         </div>
+
+        <script src="up-button.js"></script>
+        <script src="accordion.js"></script>
 </body>
 
 </html>

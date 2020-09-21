@@ -14,6 +14,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(219, 219, 219);
 }
 
 
@@ -269,4 +270,38 @@ body {
 }
 
 
+/* ________верхние кнопки для навигации по странице для страниц с контентом_____ */
+
+
+.about-header,
+.entertainment-header {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    
+    color: whitesmoke;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.about-header a,
+.entertainment-header a{
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    padding: 10px 0;
+    background-color: rgb(185, 134, 57);
+
+    color: whitesmoke;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.about-header a:hover,
+.entertainment-header a:hover {
+    background-color: rgb(219, 219, 219);
+    color: black;
+}
 

@@ -4,7 +4,7 @@
     background-color: rgb(219, 219, 219);
 }
 
-.about-header {
+/* .about-header {
     box-sizing: border-box;
     position: relative;
     text-align: center;
@@ -31,7 +31,7 @@
 .about-header a:hover {
     background-color: rgb(219, 219, 219);
     color: black;
-}
+} */
 
 .about-content {
     grid-column: 1/-1;

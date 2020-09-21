@@ -1,0 +1,103 @@
+.entertainment-nav {
+    display: flex;
+}
+
+.entertainment-header {
+    flex-grow: 1;
+}
+
+
+.entertainment-content {
+    display: grid;
+    margin: 0 auto;
+    /* max-width: 1200px; */
+
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(219, 219, 219);
+    color: black;
+    line-height: 1.5rem;
+}
+
+.common-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: url('images/entertaiment/entertainment-1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.common-info h1 {
+    flex-basis: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: whitesmoke;
+    margin-top: 200px;
+    text-shadow: 2px 2px 5px  black;
+
+}
+
+.common-info p {
+    flex-basis: 30%;
+    text-align: justify;
+    background-color: rgba(185, 134, 57, 0.9);
+    padding: 10px;
+    box-shadow:2px 2px 5px  black; ;
+}
+
+p img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.accordion-btn {
+  background-color: rgb(219, 219, 219);;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5rem;
+  transition: 0.2s;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(50, 52, 59);
+  position: relative;
+}
+
+.accordion-btn::after {
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 8px 0 7px;
+    border-color: rgb(50, 52, 59) transparent transparent transparent;
+
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+
+.active, .accordion-btn:hover {
+  background-color: rgb(50, 52, 59);
+  color: whitesmoke;
+}
+
+.pannel {
+  padding: 0 20px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding-left: 50px;
+}
+
