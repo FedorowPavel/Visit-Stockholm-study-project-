@@ -225,7 +225,7 @@ body {
     padding: 15px 0;
     color: whitesmoke; 
     text-align: center;
-    font-size: 3em;
+    font-size: 2rem;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
@@ -235,8 +235,7 @@ body {
 .entertainment-header a:hover,
 .transport-header a:hover,
 .stay-header a:hover { 
-    /* color: black;  */
-    font-size: 3em;
+    color: whitesmoke; 
     font-weight: bold;
     background-color: rgb(177, 120, 34);
     text-decoration: underline;
@@ -320,7 +319,6 @@ body {
 }
 .transport-header {
     margin-bottom: 20px;
-    background-color: rgb(81, 147, 221);
     background-image: repeating-linear-gradient(45deg, rgb(50, 52, 59) 0px, rgb(50, 52, 59) 20px, rgb(185, 134, 57) 20px, rgb(185, 134, 57) 40px), repeating-linear-gradient(135deg, rgb(50, 52, 59) 0px, rgb(50, 52, 59) 20px, rgb(185, 134, 57) 20px, rgb(185, 134, 57) 40px);
 }
 
