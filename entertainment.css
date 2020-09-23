@@ -189,3 +189,7 @@ p img {
     /* color: whitesmoke; */
     text-shadow: 1px 1px 2px black;
 }
+
+.map {
+    grid-column: 1/-1;
+}
