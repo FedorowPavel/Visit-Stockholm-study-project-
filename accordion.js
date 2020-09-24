@@ -14,10 +14,3 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-// function myFunction() {
-//     document.getElementsByClassName('entertainment-section').style.overflow = 'scroll';
-// }
-
-function turnUpBtn() {
-    document.getElementsByClassName('up-btn')[0].style = "display: block";
-}
