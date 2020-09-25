@@ -74,15 +74,89 @@
     grid-column: 2/ span 2;
 }
 
-
-
 .wide img {
     width: 100%;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.wide img:hover {
-    transform: scale(1.3);
+
+
+
+
+/* _____________modal img________________ */
+
+.modal {
+  display: none; 
+  /* background-color: rgb(0,0,0); */
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1; 
+  overflow: auto; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-height: 70vh;
+    margin: 0 auto;
+    animation-name: animate;
+    animation-duration: 0.2s
+}
+
+
+@keyframes animate { /*анимация выдвижения модальной картинки */
+  from {top:-100%; opacity:0}
+  to {top: 50%; opacity:1}
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    /* border-radius: 50%; */
+    background-color: #fff;
+    font-size:  30px;
+    /* font-weight:  bold; */
+    cursor: pointer;
+    color: rgb(185, 134, 57);
+    background-color: rgb(219, 219, 219); 
+    transition: 0.2s;
+    animation: closeLight infinite 2s;
+}
+
+.close:hover {
+     font-size:  35px;
+     background-color: rgb(201, 102, 102);
+     color: black;
+     animation: none;
+}
+
+@keyframes closeLight { /*анимация мерцания кнопки закрыть*/
+    0% {
+        color: rgb(185, 134, 57);
+    }
+
+    50% {
+        color: black;
+    }
+
+    100% {
+        color: rgb(185, 134, 57);
+    }
 }
 
 .about-image figcaption {
