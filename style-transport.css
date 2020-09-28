@@ -150,7 +150,7 @@ aside {
 .info {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 30px 20px;
     border-left: 10px solid  rgb(185, 134, 57);
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
@@ -162,6 +162,10 @@ aside {
 .info .info-text {
     text-indent: 20px;
     padding-bottom: 20px;
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
+    text-align: justify;
+    
 }
 
 .info ul {
@@ -174,6 +178,7 @@ aside {
 }
 
 .info figcaption {
+    font-size: 1rem;
     color: gray;
     text-align: center;
 }
@@ -191,6 +196,12 @@ aside {
 .blue {
     padding: 0 5px;
     background-color: rgb(86, 145, 194);
+}
+
+figure {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0px;
 }
 
 .info img {
