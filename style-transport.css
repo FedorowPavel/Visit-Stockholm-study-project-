@@ -104,19 +104,19 @@ nav img {
 main {
     display: flex;
     flex-direction: column;
-
-
-    height: 3000px;
 }
+
+section {
+    border-bottom: 1px solid rgb(185, 134, 57);
+}
+
 
 nav:hover+.wrapper{
     /* margin-left: 250px; */
     transform: translate(100px);
 }
 
-aside {
-    height: 3000px;
-}
+
 
 .transport-item {
     display: flex;
@@ -126,25 +126,26 @@ aside {
 .transport-item .tittle {
     font-size: 1.5rem;
     
-    flex-basis: 40%;
-    min-width: 300px;
+    /* flex-basis: 40%; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 
     position: sticky;
     top: 60px;
 }
 
 .tittle h2 {
-    /* width: 300px; */
+    width: 180px;
     margin-top: 30px;
+    text-align: center;
     padding: 0px 15px;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
-    text-align: center;
     color: whitesmoke;
     border-top: 5px solid whitesmoke;
     background-color: rgb(50, 52, 59);
+    white-space: nowrap;
+    font-weight: normal;
 }
 
 .info {
@@ -208,3 +209,65 @@ figure {
     width: 100%;
     height: auto;
 }
+
+/* _______________grid gallery_____________ */
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-auto-flow: dense;
+    grid-gap: 5px;
+}
+
+.grid-gallery-item {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+
+.grid-gallery-item img {
+    display: block;
+    /* height: auto; */
+}
+
+
+
+.gallery-item-tittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: whitesmoke;
+    border-top: 2px solid rgb(185, 134, 57);
+    background-color: rgb(50, 52, 59);
+    white-space: nowrap;
+
+}
+
+.gallery-item-tittle h4 {
+    margin: 5px;
+    font-weight: normal;
+}
+
+.external-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    /* opacity: 0; */
+    transition: 0.2s;
+    width: 20px;
+    height: 20px;
+    background-color:  rgba(245, 245, 245, 0.507);
+    margin: 5px;
+    padding: 5px;
+}
+
+.grid-gallery-item:hover .external-link {
+    display: block;
+    /* opacity: 1; */
+}
+
