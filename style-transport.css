@@ -161,6 +161,10 @@ nav:hover+.wrapper{
 
 }
 
+.info h3 {
+    margin-top: 0;
+}
+
 
 .info .info-text {
     text-indent: 20px;
@@ -360,4 +364,66 @@ figure {
 }
 
 
+.table {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+     background-color: white;
+
+     border-radius:  0 0 3px 3px;
+     overflow: hidden;
+}
+
+.table-item {
+    padding: 10px;
+}
+
+.rating {
+    text-align: center;
+    color:  rgb(185, 134, 57);
+}
+
+
+
+.head {
+    grid-row: 1/2;
+    text-align: center;
+    background-color:  rgb(50, 52, 59);
+    border-top: 5px solid white;
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    grid-column: 1/2;
+    font-weight: bold;
+}
+
+.name,
+.price,
+.booking,
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    text-align: justify;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.name:nth-of-type(even),
+.about:nth-of-type(odd),
+.price:nth-of-type(even),
+.booking:nth-of-type(odd),
+.rating:nth-of-type(even) {
+    background-color: rgb(219, 219, 219);
+}
 
