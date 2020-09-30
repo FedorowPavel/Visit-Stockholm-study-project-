@@ -216,6 +216,37 @@ figure {
     height: auto;
 }
 
+.tram  .info{
+    background-color:rgb(240, 238, 232);
+}
+
+.info-text img {
+    width: 100px;
+    float: left;
+    margin: 20px;
+    
+}
+
+.pendeltag figure img {
+    border-radius: 5px;
+}
+
+.iframe-wrapper {
+   position: relative;
+   width: 90%;
+   margin: 30px auto;
+   height: 0;
+   padding-bottom: 50%;
+} 
+iframe {
+   position:absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+}
+
+
 /* _______________grid gallery_____________ */
 
 .grid-gallery {
@@ -285,6 +316,8 @@ figure {
     background-color: white;
     text-align: justify;
 }
+
+
 
 .instruction {
     display: grid;
@@ -367,10 +400,10 @@ figure {
 .table {
     display: grid;
     grid-template-columns: repeat(5, auto);
-     background-color: white;
+    background-color: white;
 
-     border-radius:  0 0 3px 3px;
-     overflow: hidden;
+    border-radius:  0 0 3px 3px;
+    overflow: hidden;
 }
 
 .table-item {
@@ -427,3 +460,53 @@ figure {
     background-color: rgb(219, 219, 219);
 }
 
+
+.sea {
+    width: 90%;
+    height: 0;
+    padding-bottom: 40%;
+    margin: 20px auto;
+    /* border: 1px solid saddlebrown; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.sea img:nth-of-type(1) {
+    width: 120%;
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    opacity: 0.4;
+    animation-name: seaMoving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    z-index: 1;
+}
+
+.sea img:nth-of-type(2) {
+    width: 30%;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: boatMoving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes seaMoving {
+    0% { bottom: -30px; left: 0; }
+    50% { bottom: -20px; left: -10px; }
+    100% { bottom: -30px; left: 0; }
+}
+
+@keyframes boatMoving {
+    0% { top: 40%; left: 50%; }
+    50% { top: 43%; left: 50%;  }
+    100% { top: 40%; left: 50%;  }
+}
