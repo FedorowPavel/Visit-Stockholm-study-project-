@@ -194,16 +194,19 @@ body {
 
 .entertainment-item {
     font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     font-size: 2em;
     height: auto;
     align-self: start;
+    overflow: hidden;
 
     background-color: #fff;
     box-shadow: 0px 0px 10px -4px #000000 ;
+    border-radius: 3px;
 }
 
-.entertainment-item:hover {
-    transform: scale(1.03);
+.entertainment-item:hover img{
+    transform: scale(1.1);
     transition: 0.2s;
 }
 
@@ -213,7 +216,9 @@ body {
     grid-column: 1 / -1;
     
     background-color: rgba(185, 134, 57);
-    box-shadow: 0px 0px 10px -4px #000000 ;
+    border-radius: 3px;
+    overflow: hidden;
+    /* box-shadow: 0px 0px 10px -4px #000000; */
 }
 
 .entertainment-header a,
@@ -239,6 +244,8 @@ body {
     font-weight: bold;
     background-color: rgb(177, 120, 34);
     text-decoration: underline;
+    /* box-shadow: 0px 0px 0px 0px #00000000; */
+    box-shadow: 0px 0px 10px -4px #000000 inset;
 }
 
 .entertainment-image,
@@ -248,7 +255,7 @@ body {
 
 .gradient-background-black {
     position: absolute;
-    top: 60%;
+   bottom: 0;
     width: 100%;
     height: 40%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , black );
@@ -260,15 +267,17 @@ body {
     padding-left: 10px;
     color: whitesmoke;
     position: absolute;
+    font-weight: normal;
     bottom: 5%;
 }
 
 .entertainment-image img,
 .transport-image img{
     width: 100%;
+    display: block;
 }
 
-.entertainment-text {
+/* .entertainment-text {
     height: 150px;
     overflow: hidden;
     text-align: justify;
@@ -279,11 +288,11 @@ body {
     transition: 0.2s;
     color:  rgb(50, 52, 59);
     cursor: pointer;
-}
+} */
 
-.entertainment-text i {
+/* .entertainment-text i {
     color:  rgb(81, 147, 221);
-}
+} */
 
 /* .entertainment-text:hover {
     height: 300px;
@@ -315,7 +324,7 @@ body {
 /* ______________transport________________ */
 
 .transport-container {
-    grid-gap: 0;
+    grid-gap: 10px;
 }
 .transport-header {
     margin-bottom: 20px;
@@ -330,6 +339,8 @@ body {
 .transport-item {
     cursor: pointer;
     box-shadow: 0px 0px 10px -4px #000000 ;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .transport-image {
@@ -375,9 +386,9 @@ body {
     transform: translate(-130px, 0) skew(-15deg);
 } 
 
-.transport-image:hover img {
+/* .transport-image:hover img {
     opacity: 0.9;
-}
+} */
 
 
 /* _______________facts_____________ */
@@ -416,6 +427,8 @@ body {
     color: black;
     transition: 0.1s;
     transform-origin: 0 0;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .fact-item:nth-child(3n+3) {
@@ -451,6 +464,8 @@ body {
     justify-content: center;
     background-color: rgb(50, 52, 59);
     box-shadow: 0px 0px 24px -12px #000000;
+     border-radius: 3px;
+    overflow: hidden;
 }
 
 .stay-item:hover {
