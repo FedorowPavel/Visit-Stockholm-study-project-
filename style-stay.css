@@ -2,6 +2,14 @@
     height: auto;
 }
 
-.container-fliud {
-    color: black;
+
+.container {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+
 }
+
+/* .booking {
+background-color: rgb(185, 134, 57); !important
+} */
+
