@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(219, 219, 219);
+    
 }
 
 /* .about-header {

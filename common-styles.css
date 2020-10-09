@@ -24,7 +24,7 @@ body {
 
 /* ______________________header___________________ */
 
-.container {
+.container-wrapper {
     font-family: 'Oswald', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
