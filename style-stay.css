@@ -3,13 +3,63 @@
 }
 
 
-.container {
+.container-fluid {
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
-
+    /* letter-spacing: 0.1rem; */
 }
 
-/* .booking {
-background-color: rgb(185, 134, 57); !important
-} */
+
+
+.header {
+    background: url('images/to-stay/1.jpg') no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    
+}
+
+.modal-content {
+background-color: rgb(185, 134, 57) !important; 
+}
+
+
+
+button:hover {
+    background-color: rgb(185, 134, 57) !important;
+    box-sizing: border-box;
+}
+
+.bgc-light-black {
+    background-color:rgb(50, 52, 59);
+}
+
+.text-shadow {
+    text-shadow: black 1px 1px  3px;
+}
+
+.carousel-inner {
+    height: auto; 
+    background: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.75);
+    border: 1px;
+}
+
+.carousel-item .d-inline {
+    box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.75);
+}
+
+.price {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(185, 134, 57);
+}
+
+.price span{
+    color:rgba(204, 204, 204, 0.397);
+}
+
 
