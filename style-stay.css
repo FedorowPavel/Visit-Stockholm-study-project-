@@ -31,10 +31,14 @@ button:hover {
 }
 
 .bgc-light-black {
-    background-color:rgb(50, 52, 59);
+    
+    /* background: url('images/icons/bed.png') center center;
+    background-size: 10px 10px; */
+    background-color:rgba(50, 52, 59, 0.99);
+    background-repeat: space;
 }
 
-.text-shadow {
+.text-shadow, h2 {
     text-shadow: black 1px 1px  2px;
 }
 
@@ -50,6 +54,17 @@ button {
     box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.75);
     border: 1px;
 }
+
+.carousel-control-prev {
+    justify-content: flex-start;
+    margin-left: -25px;
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
+    margin-right: -25px;
+}
+
 
 .carousel-item .d-inline {
     box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.75);
