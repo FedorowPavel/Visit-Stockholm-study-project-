@@ -32,24 +32,28 @@ button:hover {
 
 .bgc-light-black {
     
-    /* background: url('images/icons/bed.png') center center;
-    background-size: 10px 10px; */
+    background: url('images/icons/bed.png') center center;
+    background-size: 10px 10px;
     background-color:rgba(50, 52, 59, 0.99);
     background-repeat: space;
 }
 
-.text-shadow, h2 {
-    text-shadow: black 1px 1px  2px;
+.bgc-light-gray {
+background-color: rgb(219, 219, 219);
 }
 
+/* .text-shadow, h2 {
+    text-shadow: black 1px 1px  2px;
+} */
+
 button {
-    box-shadow: 5px 5px 12px -1px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 12px -1px rgba(0,0,0,0.6);
 }
 
 .carousel-inner {
     height: auto; 
     background: #000;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.75);
     border: 1px;
@@ -79,6 +83,61 @@ button {
 
 .price span{
     color:rgba(204, 204, 204, 0.397);
+}
+
+.bg-gamla-stan {
+    background: url('images/to-stay/gamla\ stan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.bg-hornstull {
+    background: url('images/to-stay/hornstull.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.bg-odenplan {
+    background: url('images/to-stay/odenplan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.bg-djurgarden {
+    background: url('images/to-stay/djurgarden.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.bg-sundbyberg {
+    background: url('images/to-stay/Sundbyberg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.bg-gamla-stan p,
+.bg-hornstull p,
+.bg-odenplan p,
+.bg-djurgarden p {
+    text-indent: 20px;
+    padding: 0;
+    color:  rgb(219, 219, 219);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption {
+    background-color: rgba(245, 245, 245, 0.35);
+    color: black;
 }
 
 
