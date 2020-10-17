@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Oswald';
-    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url(fonts/Roboto/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
 body {

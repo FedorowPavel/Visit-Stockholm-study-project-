@@ -12,7 +12,7 @@
 
 
 .header {
-    background: url('images/to-stay/1.jpg') no-repeat;
+    background: url('../images/to-stay/1.jpg') no-repeat;
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
@@ -32,7 +32,7 @@ button:hover {
 
 .bgc-light-black {
     
-    background: url('images/icons/bed.png') center center;
+    background: url('../images/icons/bed.png') center center;
     background-size: 10px 10px;
     background-color:rgba(50, 52, 59, 0.99);
     background-repeat: space;
@@ -86,7 +86,7 @@ button {
 }
 
 .bg-gamla-stan {
-    background: url('images/to-stay/gamla\ stan.jpg');
+    background: url('../images/to-stay/gamla\ stan.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -94,7 +94,7 @@ button {
 }
 
 .bg-hornstull {
-    background: url('images/to-stay/hornstull.png');
+    background: url('../images/to-stay/hornstull.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -102,7 +102,7 @@ button {
 }
 
 .bg-odenplan {
-    background: url('images/to-stay/odenplan.jpg');
+    background: url('../images/to-stay/odenplan.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -110,7 +110,7 @@ button {
 }
 
 .bg-djurgarden {
-    background: url('images/to-stay/djurgarden.jpg');
+    background: url('../images/to-stay/djurgarden.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -118,7 +118,7 @@ button {
 }
 
 .bg-sundbyberg {
-    background: url('images/to-stay/Sundbyberg.png');
+    background: url('../images/to-stay/Sundbyberg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

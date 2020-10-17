@@ -85,6 +85,8 @@ p img {
   position: relative;
 }
 
+
+
 .accordion-btn::after {
     content: ' ';
     width: 0;
