@@ -546,11 +546,16 @@
     transform: translate(0, 94px);
 } 
 
+.transport-image:hover .transport-type {
+    transform: translate(0, 94px);
+} 
+
 .transport-price {
     width:160px;
     text-align: left;
     transform: translate(-130px, 0) skew(-15deg);
 } 
+
 
                 /* facts-section */
 .facts-container {

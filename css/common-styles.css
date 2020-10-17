@@ -308,3 +308,43 @@ body {
     color: black;
 }
 
+@media screen and (max-width: 425px)  {
+ 
+    
+    .top-button {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 3;
+
+    border-radius: 200%;
+    background-color: rgb(219, 219, 219);
+    cursor: pointer;
+    box-shadow: 0px 5px 20px -2px  rgb(50, 52, 59);
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.top-button a::after {
+    border-width: 0 16px 24px 16px;
+    border-color: transparent transparent  rgb(185, 134, 57) transparent;
+}
+
+@keyframes up {
+
+    0% {
+        transform: translateX(-50%) translateY(60px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0px);
+        opacity: 0;
+    }
+}
+
+
+}
+
