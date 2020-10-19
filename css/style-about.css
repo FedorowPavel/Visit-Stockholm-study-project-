@@ -245,14 +245,19 @@
 
     .asside-content {
         grid-column: 2/3;
-        
-        
-    
+    }
+
+    .modal-content {
+        width: 90%;
     }
 
 }
 
 @media screen and (max-width: 425px) {
+
+    .about-header {
+        font-size: 2.2rem;
+    }
 
     .about-content {
         grid-template-columns: 1fr;
@@ -267,26 +272,35 @@
         flex-direction: row;
         overflow-x: scroll;
         align-items: flex-start;
-        height: auto;
         position: relative;
-        padding-top: 30px;
-        
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+        background-color:  rgb(231, 231, 231);
     }
 
-    .asside-content h3 {
-        white-space: nowrap;
+    .asside-content figure {
+        grid-row: 3/4;
+    }
+    
+
+    .asside-content h3,
+    .asside-content p  {
         position: sticky;
         top: 0;
         left: 0;
 
-        /* writing-mode: vertical-rl;
-        transform: rotate(180deg); */
-        text-align: center;
-        background-color:  rgb(219, 219, 219);
+        white-space: nowrap;
+        text-align: left;
+        
+
+        grid-column: 1/-1;
     }
 
     .asside-content p {
-        display: none;
+        grid-row: 2/3;
     }
 
     figure {
@@ -299,10 +313,6 @@
         white-space: nowrap;
     }
 
-    
-
-   
-
     .modern-asside {
         grid-row: 21/22;
     }
@@ -310,8 +320,12 @@
     .about-text,
     .about-image {
         grid-column: 1/ 2;
-        font-size: 1.6rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .modal-content {
+        width: 98%;
     }
 
 }
