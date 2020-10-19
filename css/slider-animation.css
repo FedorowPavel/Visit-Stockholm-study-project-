@@ -32,39 +32,39 @@
 }
 
 .top {
-    background-color: rgb(42, 131, 61);
+    background-color:  rgb(219, 219, 219);
     transform: rotateX(90deg) translateZ(50px);
     
 }
 
 .bottom {
-    background-color: rgb(42, 131, 61);
+    background-color: rgb(219, 219, 219);
     transform: rotateX(90deg) translateZ(-50px);
 
 }
 
 .left {
-    background-color: rgb(50, 156, 73);
+    background-color:  rgb(219, 219, 219);
     transform: rotateY(90deg) translateZ(50px);
    
 
 }
 
 .right {
-    background-color: rgb(50, 156, 73);
+    background-color: rgb(219, 219, 219);
     transform: rotateY(270deg) translateZ(-50px);
     
 
 }
 
 .back {
-    background-color: rgb(62, 190, 90);
+    background-color:  rgb(219, 219, 219);
     transform: translateZ(-50px) ;
 
 }
 
 .front {
-    background-color: rgb(62, 190, 90);
+    background-color: rgb(219, 219, 219);
     transform: translateZ(50px);
 
 }
@@ -135,4 +135,13 @@
 }
 .cube:nth-of-type(10) {
     animation-delay: 2s;
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+@media screen and (max-width: 425px) {
+
 }

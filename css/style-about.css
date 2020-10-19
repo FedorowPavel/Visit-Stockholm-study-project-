@@ -225,8 +225,7 @@
 
     .about-header {
         font-size: 1.7rem;
-    
-}
+    }
 
     .about-content {
         width: 95%;
@@ -321,7 +320,7 @@
     .about-image {
         grid-column: 1/ 2;
         font-size: 2rem;
-        line-height: 2.4rem;
+        line-height: 2.5rem;
     }
 
     .modal-content {
