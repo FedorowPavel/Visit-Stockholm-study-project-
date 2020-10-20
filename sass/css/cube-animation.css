@@ -1,0 +1,70 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .slider-container .cube {
+    min-width: 100px;
+    height: 500px;
+    transform-style: preserve-3d;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-timing-function: ease-out; }
+    .slider-container .cube .sides {
+      position: absolute;
+      width: 100px;
+      height: 500px; }
+    .slider-container .cube .left {
+      background-color: #dbdbdb;
+      transform: rotateY(90deg) translateZ(50px); }
+    .slider-container .cube .right {
+      background-color: #dbdbdb;
+      transform: rotateY(270deg) translateZ(-50px); }
+    .slider-container .cube .back {
+      background-color: #dbdbdb;
+      transform: translateZ(-50px); }
+    .slider-container .cube .front {
+      background-color: #dbdbdb;
+      transform: translateZ(50px); }
+    .slider-container .cube:nth-of-type(1) {
+      animation-delay: 0.2s; }
+    .slider-container .cube:nth-of-type(2) {
+      animation-delay: 0.4s; }
+    .slider-container .cube:nth-of-type(3) {
+      animation-delay: 0.6s; }
+    .slider-container .cube:nth-of-type(4) {
+      animation-delay: 0.8s; }
+    .slider-container .cube:nth-of-type(5) {
+      animation-delay: 1s; }
+    .slider-container .cube:nth-of-type(6) {
+      animation-delay: 1.2s; }
+    .slider-container .cube:nth-of-type(7) {
+      animation-delay: 1.4s; }
+    .slider-container .cube:nth-of-type(8) {
+      animation-delay: 1.6s; }
+    .slider-container .cube:nth-of-type(9) {
+      animation-delay: 1.8s; }
+    .slider-container .cube:nth-of-type(10) {
+      animation-delay: 2s; }
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg); }
+  23% {
+    transform: rotateX(0deg) rotateY(0deg); }
+  25% {
+    transform: rotateX(0deg) rotateY(90deg); }
+  48% {
+    transform: rotateX(0deg) rotateY(90deg); }
+  50% {
+    transform: rotateX(0deg) rotateY(180deg); }
+  73% {
+    transform: rotateX(0deg) rotateY(180deg); }
+  75% {
+    transform: rotateX(0deg) rotateY(270deg); }
+  98% {
+    transform: rotateX(0deg) rotateY(270deg); }
+  100% {
+    transform: rotateX(0deg) rotateY(360deg); } }
+
+/*# sourceMappingURL=cube-animation.css.map */

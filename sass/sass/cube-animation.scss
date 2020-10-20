@@ -1,0 +1,95 @@
+$sideColor: rgb(219, 219, 219);
+
+@mixin cubeSlider ($slidesCount) {
+    & .cube {
+        min-width: 100px;
+        height: 500px;
+        transform-style: preserve-3d;
+        animation-name: rotate;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+        animation-timing-function: ease-out;
+
+        & .sides {
+            position: absolute;
+            width: 100px;
+            height: 500px;
+        }
+
+        & .left {
+                background-color: $sideColor;
+                transform: rotateY(90deg) translateZ(50px);
+            }
+
+        & .right {
+            background-color: $sideColor;
+            transform: rotateY(270deg) translateZ(-50px);
+        }
+        
+        & .back {
+            background-color:  $sideColor;
+            transform: translateZ(-50px) ;
+        }
+
+        & .front {
+            background-color:$sideColor;
+            transform: translateZ(50px);
+        }
+
+        @for $i from 1 through $slidesCount {
+            &:nth-of-type(#{$i}) {
+                animation-delay: (0.2*$i) + s ;
+            }
+        }
+
+        
+    }
+}
+
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include cubeSlider (10)
+}
+
+
+
+@keyframes rotate {
+
+0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  23% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  25% {
+    transform: rotateX(0deg) rotateY(90deg);
+  }
+
+  48% {
+    transform: rotateX(0deg) rotateY(90deg);
+  }
+
+  50% {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+
+  73% {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+
+  75% {
+    transform: rotateX(0deg) rotateY(270deg);
+  }
+  98% {
+    transform: rotateX(0deg) rotateY(270deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(360deg);
+  }
+}
