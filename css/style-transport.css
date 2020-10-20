@@ -567,6 +567,18 @@ iframe {
 
 @media screen and (max-width: 768px) {
 
+    h3 {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+
+    li,
+    .info-text,
+    .info-fact {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+
     .wrapper {
         margin-top: 90px;
         margin-left: 0;
@@ -591,7 +603,7 @@ iframe {
         padding: 0;
         margin: 0;
         position: fixed;
-        top: 60px;
+        /* top: 60px; */
         z-index: 3;
     }
 
@@ -613,6 +625,11 @@ iframe {
 
     .nav_item span {
         display: none;
+    }
+
+    .nav__item:hover {
+        background-color: rgb(185, 134, 57);
+        
     }
 
     .nav__item:hover span {
@@ -643,5 +660,44 @@ iframe {
 }
 
 @media screen and (max-width: 425px) {
+
+    h3 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    li,
+    .info-text,
+    .info-fact,
+    .table {
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+    }
+
+    .tittle h2 {
+        transform: rotate(180deg);
+        width: auto;
+        writing-mode: vertical-lr;
+        padding: 20px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .transport-item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .grid-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    .name {
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+    }
+
+    
+
 
 }
