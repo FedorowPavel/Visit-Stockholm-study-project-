@@ -401,14 +401,14 @@
 @media screen and (max-width: 768px) {
 
 .main-image a {
-    font-size: 12em;
+    font-size: 5rem;
     text-decoration: underline;
 }
 
 .entertainment-header a,
 .transport-header a,
 .stay-header a{ 
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
@@ -459,7 +459,7 @@
 }
 
 .facts-container h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     text-align: center;
 }
@@ -488,7 +488,7 @@
 .entertainment-header a,
 .transport-header a,
 .stay-header a{ 
-    font-size:4rem;
+    font-size:2rem;
 }
 
     /* entartainment-section */
@@ -522,7 +522,7 @@
 }
 
 .entertainment-image h2{
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 
@@ -569,26 +569,26 @@
 }
 
 .fact-item {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 /* stay section */
 
 .stay-name h3 {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .stay-options h3{
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 .stay-options,
 .stay-options ul {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .stay-options p {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 
