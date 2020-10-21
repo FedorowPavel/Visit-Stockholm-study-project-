@@ -33,21 +33,43 @@ body {
 
 .header-menu {
     display: flex;
+    /* justify-content: space-between; */
     position: sticky;
     top: 0;
-    z-index: 1;
+    height: 60px;
+    z-index: 20;
     font-size: 2em;
     color: rgb(255, 255, 255);
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
     background-color: rgb(50, 52, 59);
+
+    transition: 0.3s;
 }
 
 .header-item {
     position: relative;
     cursor: pointer;
 }
+
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+}
+
+.header-menu .header-item:nth-of-type(6) {
+        display: none;
+    }
+
 
 .nav {
     padding: 15px 30px 15px 20px;
@@ -98,6 +120,13 @@ body {
     opacity: 1;
 }
 
+.nav:hover.nav:nth-of-type(6)::after {
+    transition: 0.2s ease;
+    opacity: 0;
+}
+
+
+
 /* dropdown content  */ 
 
 .header-dropdown {
@@ -127,6 +156,53 @@ body {
 
 .header-item:hover .header-dropdown {
     display: block;
+}
+
+@media screen and (max-width: 768px)  {
+
+    .header-menu .header-item:nth-of-type(2),
+    .header-menu .header-item:nth-of-type(3),
+    .header-menu .header-item:nth-of-type(4),
+    .header-menu .header-item:nth-of-type(5) {
+        display: none;
+    }
+
+    .header-menu .header-item:nth-of-type(6) {
+        display: flex;
+    }
+
+    .header-menu.responsive .header-item:nth-of-type(2),
+    .header-menu.responsive .header-item:nth-of-type(3),
+    .header-menu.responsive .header-item:nth-of-type(4),
+    .header-menu.responsive .header-item:nth-of-type(5)  {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-menu.responsive  {
+        position: sticky;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .header-menu a:not(:last-child) {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-item:hover .header-dropdown {
+        display: none;
+    }
+
+    .nav:hover.nav::after {
+        transition: 0.2s ease;
+        opacity: 0;
+    }
+
+    
 }
 
 
