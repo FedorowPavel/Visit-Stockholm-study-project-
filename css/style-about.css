@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(219, 219, 219);
+    margin-top: 60px;
     
 }
 
@@ -33,10 +34,10 @@
     background-color: rgb(219, 219, 219);
     color: black;
 } */
-/* .about-header {
+.about-header {
     position: sticky;
     top: 60px;
-} */
+}
 
 
 .about-content {
@@ -104,6 +105,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   min-height: 2000px;
+  z-index: 5;
 }
 
 .modal-content {
@@ -234,7 +236,7 @@ figure {
 @media screen and (max-width: 768px) {
 
     .about-header {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .about-content {
@@ -260,19 +262,26 @@ figure {
         width: 90%;
     }
 
+    .asside-content figcaption {
+       font-size: 0.9rem; 
+    }
 }
 
 @media screen and (max-width: 425px) {
 
     .about-header {
-        font-size: 2.2rem;
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
     }
 
     .about-content {
         grid-template-columns: 1fr;
         grid-gap: 1px;
 
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .asside-content {
@@ -329,8 +338,8 @@ figure {
     .about-text,
     .about-image {
         grid-column: 1/ 2;
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .modal-content {

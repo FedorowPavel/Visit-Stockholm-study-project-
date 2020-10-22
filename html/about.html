@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="../css/common-styles.css">
     <link rel="stylesheet" type="text/css" href="../css/style-about.css">
+    <link rel="stylesheet" href="../css/burger_menu_style.css">
 </head>
 
 
@@ -24,7 +25,58 @@
 
         <!-- ___________________ header-menu__________________ -->
 
-        <div class="header-menu" id="topNav">
+
+        <header class="header">
+            <div class="top-nav">
+                <div class="header__body">
+                    <a href="../index.html" class="header__logo">
+                        <img src="../images/stad.png" alt="">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="about.html" class="header__link">About</a>
+                                <div class=" header-dropdown">
+                                    <a href="about.html#history">History</a>
+                                    <a href="about.html#modern">Modern</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="entertainment.html" class="header__link">Entertainment</a>
+                                <div class="header-dropdown">
+                                    <a href="entertainment.html#see">To see</a>
+                                    <a href="entertainment.html#eat">To eat</a>
+                                    <a href="entertainment.html#fun">To fun</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="transport.html" class="header__link">Transport</a>
+                                <div class="header-dropdown">
+                                    <a href="transport.html#tbanna">T-banna</a>
+                                    <a href="transport.html#bus">Bus</a>
+                                    <a href="transport.html#taxi">Taxi</a>
+                                    <a href="transport.html#pendeltag">pendeltåg</a>
+                                    <a href="transport.html#rail">Light rail</sa>
+                                        <a href="transport.html#boat">Boat</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="to-stay.html" class="header__link">To stay</a>
+                                <div class="header-dropdown">
+                                    <a href="to-stay.html">Hotels</a>
+                                    <a href="to-stay.html">Hostels</a>
+                                    <a href="to-stay.html">Appartments</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- <div class="header-menu" id="topNav">
             <div class="header-item stad">
                 <a href="../index.html"><img src="../images/stad.png" alt="stad"></a>
             </div>
@@ -69,7 +121,7 @@
                 </a>
             </div>
 
-        </div>
+        </div> -->
         <!-- _________________main-content_____________________ -->
 
         <div class="wrapper">
@@ -79,7 +131,7 @@
             </div>
 
             <div class="about-header">
-                <a href="#modern" target="">Modern City</a>
+                <a href="#modern" target="">Modern</a>
 
             </div>
 
@@ -526,7 +578,9 @@
             </div>
         </div>
 
+        <script src="../jquery/jquery-3.5.1.js"></script>
 
+        <script src="../js/top_nav_burger.js"></script>
         <script src="../js/top_nav.js"></script>
         <script src="../js/up-button.js"></script>
         <script src="../js/modal-image.js"></script>
