@@ -338,8 +338,8 @@ figure {
     .about-text,
     .about-image {
         grid-column: 1/ 2;
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
     }
 
     .modal-content {
@@ -351,10 +351,22 @@ figure {
         min-height: 250px;
         border-radius: 10px;
         border: 3px solid  rgb(185, 134, 57);
-}
+
+
+    .asside-content img {
+        height: 200px;
+    }
 
     
 
+}
+
+@media screen and (max-width: 298px) {
+    .about-text,
+    .about-image {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
 }
 
 
