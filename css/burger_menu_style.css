@@ -38,7 +38,7 @@ html, body {
 .header__body {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 60px;
     align-items: center;
 }
@@ -66,6 +66,8 @@ html, body {
 
 .header__list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 2;
     padding: 0;
@@ -73,7 +75,9 @@ html, body {
 
 .header__list li {
     list-style: none;
-    margin-right: 20px;
+    margin-right: 0;
+    position: relative;
+
 }
 
 .header__link {
@@ -83,7 +87,71 @@ html, body {
     text-decoration: none;
     white-space: nowrap;
     letter-spacing: 0.1rem;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px 0 10px;
+    transition: 0.2s ease;
+    position: relative;
 }
+
+.header__link:hover {
+     background-color: rgb(185, 134, 57);
+}
+
+
+/* dropdwown */
+.header__list li:hover .header-dropdown {
+    padding: 0px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.header__list .header-dropdown {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    width: auto;
+    font-size: 1.5rem;
+    background-color: rgb(185, 134, 57);
+}
+
+.header__list .header-dropdown a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/* dropdwown */
+
+.header__link::after {
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 8px 0 7px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translate(0, -50%);
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.header__link:hover.header__link::after {
+    opacity: 1;
+}
+
+
 
 .content {
     padding-top: 60px;
@@ -94,8 +162,27 @@ html, body {
 
 @media screen and (max-width: 767px) {
 
+    .header__body {
+        justify-content: space-between;
+    }
+
+    .header__link li:hover .header-dropdown {
+        display: none;
+    }
+
+    .header__list .header-dropdown a {
+        display: none;
+    }
+
+
     body.lock {
         overflow: hidden;
+    }
+
+    .header__link::after {
+        transform: rotate(270deg) translate(40%);
+        border-color: rgb(185, 134, 57) transparent transparent transparent;
+        
     }
 
     .header__burger {
@@ -169,14 +256,19 @@ html, body {
     .header__list {
         display: block;
         text-align: center;
+        margin-top: 0;
     }
 
     .header__list li {
-        padding: 10px 0;
+        padding: 0 0;
         margin-right: 0;
         cursor: pointer;
         transition: 0.2s;
     }
+
+    .header__link:hover {
+     background-color:  rgb(50, 52, 59);
+}
 
     .header__list li:hover  {
         background-color:  rgb(50, 52, 59);
