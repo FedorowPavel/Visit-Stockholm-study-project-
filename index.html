@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/common-styles.css">
     <link rel="stylesheet" type="text/css" href="css/style-index.css">
     <link rel="stylesheet" href="wow/animate.css">
+    <link rel="stylesheet" href="css/burger_menu_style.css">
 
     <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
 </head>
@@ -26,7 +27,35 @@
 
         <!-- ___________________ header-menu__________________ -->
 
-        <div class="header-menu" id="topNav">
+        <header class="header">
+            <div class="top-nav">
+                <div class="header__body">
+                    <a href="#" class="header__logo">
+                        <img src="images/stad.png" alt="">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="" class="header__link">About</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Entertainment</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Transport</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">To stay</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- <div class="header-menu" id="topNav">
             <div class="header-item stad">
                 <a href="#"><img src="images/stad.png" alt="stad"></a>
             </div>
@@ -71,7 +100,7 @@
                 </a>
             </div>
 
-        </div>
+        </div> -->
 
         <!--______________________ main-image___________________ -->
 
@@ -450,7 +479,15 @@
             </div>
         </div>
 
-        <script src="js/top_nav.js"></script>
+
+
+
+
+
+
+        <script src="jquery/jquery-3.5.1.js"></script>
+
+        <script src="js/top_nav_burger.js"></script>
 
         <script src="js/up-button.js"></script>
 
