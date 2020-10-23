@@ -718,8 +718,8 @@ iframe {
     }
     
     h3 {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
     }
 
     .asside-wrapper {
@@ -735,8 +735,8 @@ iframe {
     .info-text,
     .info-fact,
     .table {
-        font-size: 1.3rem;
-        line-height: 1.8rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 
     .tittle h2 {
@@ -799,7 +799,7 @@ iframe {
     
 }
 
-@media screen and (max-width: 376px) {
+/* @media screen and (max-width: 376px) {
     .transport-item .tittle {
         display: none;
     }
@@ -808,5 +808,5 @@ iframe {
         border: none;
     }
 
-}
+} */
 
