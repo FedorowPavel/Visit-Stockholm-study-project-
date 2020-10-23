@@ -714,7 +714,7 @@ iframe {
 @media screen and (max-width: 425px) {
 
     .wrapper {
-        margin-top: 120px;
+        margin-top: 110px;
     }
     
     h3 {
@@ -763,11 +763,11 @@ iframe {
     }
 
     nav img {
-        height: 40px;
+        height: 30px;
     }
 
     .nav__item {
-        padding: 10px 10px;
+        padding: 10px 5px;
         width: auto;
     }
 
@@ -796,11 +796,17 @@ iframe {
         max-width: 100%;
     }
 
+    
 }
 
 @media screen and (max-width: 376px) {
     .transport-item .tittle {
         display: none;
     }
+
+    .info {
+        border: none;
+    }
+
 }
 
