@@ -7,9 +7,6 @@
 } */
 
 
-.header {
-    font-family: 'Oswald', sans-serif;
-}
 
 .container-wrapper {
     margin-top: 60px;
@@ -263,7 +260,7 @@ p img {
     .slider {
         overflow: hidden;
         width: 100%;
-        transform: scale(0.95);
+        /* transform: scale(0.95); */
         
     }
 
@@ -299,8 +296,8 @@ p img {
     
     .common-info p,
     .entertaiment-item p {
-        font-size: 1.6rem;
-        line-height: 2.2rem;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
         margin-left: 0;
         margin-right: 0;
         text-align: justify;

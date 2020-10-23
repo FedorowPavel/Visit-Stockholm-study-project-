@@ -24,6 +24,10 @@ body {
 
 /* ______________________header___________________ */
 
+.header {
+    font-family: 'Oswald', sans-serif;
+}
+
 .container-wrapper {
     font-family: 'Oswald', sans-serif;
     display: grid;
