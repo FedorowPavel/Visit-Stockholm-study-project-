@@ -11,12 +11,26 @@
 
 
 
-.header {
+.header-img {
     background: url('../images/to-stay/1.jpg') no-repeat;
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
     
+}
+
+.jumbotron-fluid {
+    margin-top: 60px;
+}
+
+/* menu */
+.header__menu {
+    height: 60px;
+}
+
+.header__menu a{
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .modal-content {
@@ -139,5 +153,12 @@ button {
     background-color: rgba(245, 245, 245, 0.35);
     color: black;
 }
+
+
+@media screen (max-width: 768px;) {
+
+
+}
+        
 
 
