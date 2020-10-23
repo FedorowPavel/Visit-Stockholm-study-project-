@@ -206,7 +206,11 @@ figure {
     max-width: 100%;
     border-radius: 50%;
     border: 3px solid  rgb(185, 134, 57);
+    /* height: 200px; */
+
 }
+
+
 
 .asside-content figcaption {
     display: block;
@@ -351,6 +355,7 @@ figure {
         min-height: 250px;
         border-radius: 10px;
         border: 3px solid  rgb(185, 134, 57);
+    }
 
 
     .asside-content img {
@@ -366,6 +371,10 @@ figure {
     .about-image {
         font-size: 1.2rem;
         line-height: 1.7rem;
+    }
+
+    figure img {
+        height: 200px;
     }
 }
 

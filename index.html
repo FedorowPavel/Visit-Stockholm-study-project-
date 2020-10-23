@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style-index.css">
     <link rel="stylesheet" href="wow/animate.css">
     <link rel="stylesheet" href="css/burger_menu_style.css">
+    <link rel="stylesheet" href="sass/css/carusel-SCSS.css">
 
     <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
 </head>
@@ -176,13 +177,65 @@
 
         <!-- _______________________slide-gallery________________________ -->
 
-        <div class="slide-container wow fadeIn">
+        <!-- <div class="slide-container wow fadeIn">
 
             <div class="slides fade">
                 <img src="images/slide-gallery/panorama-1200-600.jpg" alt="panorama">
             </div>
 
 
+        </div> -->
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" id="carousel-1" name="carousel[]" checked>
+                <input type="radio" id="carousel-2" name="carousel[]">
+                <input type="radio" id="carousel-3" name="carousel[]">
+                <input type="radio" id="carousel-4" name="carousel[]">
+                <input type="radio" id="carousel-5" name="carousel[]">
+
+                <ul class="carousel__items">
+                    <li class="carousel__item">
+                        <img src="images/slide-gallery/panorama-1200-600.jpg" alt="panorama">
+                    </li>
+                    <li class="carousel__item">
+                        <img src="images/slide-gallery/arhipelago-1200-600.jpg" alt="">
+                    </li>
+                    <li class="carousel__item">
+                        <img src="images/slide-gallery/day-panorama-1200-600.jpg" alt="">
+                    </li>
+                    <li class="carousel__item">
+                        <img src="images/slide-gallery/night-panorama-1200-600.jpg" alt="">
+                    </li>
+                    <li class="carousel__item">
+                        <img src="images/slide-gallery/evening-panorama-1200-600.jpg" alt="">
+                    </li>
+                </ul>
+
+                <div class="carousel__nav">
+                    <label for="carousel-1"></label>
+                    <label for="carousel-2"></label>
+                    <label for="carousel-3"></label>
+                    <label for="carousel-4"></label>
+                    <label for="carousel-5"></label>
+                </div>
+
+                <div class="carousel__prev">
+                    <label for="carousel-1"></label>
+                    <label for="carousel-2"></label>
+                    <label for="carousel-3"></label>
+                    <label for="carousel-4"></label>
+                    <label for="carousel-5"></label>
+                </div>
+
+                <div class="carousel__next">
+                    <label for="carousel-1"></label>
+                    <label for="carousel-2"></label>
+                    <label for="carousel-3"></label>
+                    <label for="carousel-4"></label>
+                    <label for="carousel-5"></label>
+                </div>
+
+            </div>
         </div>
 
 

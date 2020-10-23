@@ -326,6 +326,7 @@ iframe {
     grid-auto-rows: 300px;
     grid-gap: 50px;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .instruction-item {
@@ -711,7 +712,7 @@ iframe {
         padding: 20px 0;
         margin-left: 0;
         margin-right: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-top: 71px;
     }
 }
@@ -721,6 +722,10 @@ iframe {
 
     .wrapper {
         margin-top: 110px;
+    }
+
+    .info {
+        border-left-width: 0px;
     }
     
     h3 {
@@ -741,18 +746,19 @@ iframe {
     .info-text,
     .info-fact,
     .table {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
     }
 
     .tittle h2 {
-        transform: rotate(180deg);
+        display: none;
+        /* transform: rotate(180deg);
         width: auto;
         writing-mode: vertical-lr;
         padding: 20px 0;
         margin-left: 0;
         margin-right: 0;
-        font-size: 1rem;
+        font-size: 1rem; */
     }
 
     .transport-item {
@@ -779,7 +785,7 @@ iframe {
     }
 
     .nav__sidebar {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     
@@ -787,7 +793,7 @@ iframe {
     .instruction {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-auto-rows: 400px;
-        padding: 15px;
+        padding: 0 px;
     }
 
     .iframe-wrapper {
@@ -803,14 +809,5 @@ iframe {
     
 }
 
-@media screen and (max-width: 376px) {
-    /* .transport-item .tittle {
-        display: none;
-    } */
 
-    .info {
-        border-left-width: 1px;
-    }
-
-}
 

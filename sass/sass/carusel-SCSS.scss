@@ -1,0 +1,182 @@
+@mixin slider ($sliderCount) {
+
+    
+     & .carousel {
+    width: 100%;
+    position: relative;
+
+        & .carousel__items {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            position: relative;
+            // height: 600px;
+            padding-bottom: 50%;
+            
+            & .carousel__item {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                z-index: 1;
+                transition: opacity 1s;
+
+                &  img {
+                    width: 100%;
+                    // height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }       
+    }
+
+    & .carousel > input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+
+
+        @for $i from 1 through $sliderCount {
+            &:nth-child(#{$i}) {
+                &:checked {
+                    & ~.carousel__nav > label:nth-child(#{$i}) {
+                        background:  rgb(185, 134, 57);      
+                    }
+                    & ~ .carousel__items .carousel__item:nth-child(#{$i}) {
+                        opacity: 1;
+                    } 
+                    
+                    @if $i == 1 {   
+                        & ~ .carousel__prev label:nth-child(#{$sliderCount}) {
+                        z-index: 3; 
+                            }
+                    }   
+                    @else {
+                            $x: $i - 1;
+                            & ~ .carousel__prev label:nth-child(#{$x}) {
+                            z-index: 3; 
+                        }
+                    } 
+
+                    @if $i ==  $sliderCount {   
+                        & ~ .carousel__next label:nth-child(1) {
+                        z-index: 3; 
+                            }
+                    }   
+                    @else {
+                            $x: $i + 1;
+                            & ~ .carousel__next label:nth-child(#{$x}) {
+                            z-index: 3; 
+                        }
+                    }
+                }
+            } 
+        }
+    
+    }
+
+    & .carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item {
+        opacity: 0;
+    }
+
+    & .carousel__nav {
+        position: absolute;
+        bottom: 1%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 3; 
+
+        &.carousel__nav label {
+            display: inline-block;
+            border-radius: 1px;
+            // border: 1px solid rgb(185, 134, 57);
+            width: 40px;
+            height: 3px;
+            cursor: pointer;
+            background-color: #ccc;
+        }
+    }
+
+    & .carousel__prev > label,
+    & .carousel__next > label {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        display: block;
+        z-index: 2;
+        top: 50%;
+        // border-radius: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        // border: 1px solid;
+        transition: 0.2s;
+
+        
+    }
+
+    
+
+    & .carousel__prev > label {
+        left: 0;
+        transition: 0.2s;
+
+        &:hover {
+            background: linear-gradient(to left,  rgba(185, 134, 57, 0) 30%, rgba(185, 134, 57, 0.5)  );
+            transition: 0.2s;
+            
+        }
+    }
+
+    & .carousel__next > label {
+        right: 0;
+        transition: 0.2s;
+
+        &:hover {
+            background: linear-gradient(to right,  rgba(185, 134, 57, 0) 30%,  rgba(185, 134, 57, 0.5)  );
+            
+        }
+    }
+
+
+    & .carousel__prev > label::before,
+    & .carousel__next > label::before,{
+        content: ' ';
+        display: block;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%,-50%) rotate(135deg);
+        border-right: 2px solid rgb(185, 134, 57);
+        border-bottom: 2px solid rgb(185, 134, 57);
+    }
+
+    & .carousel__prev > label::before {
+        transform: translate(-30%,-50%) rotate(135deg);
+    }
+
+    & .carousel__next > label::before {
+        transform: translate(-65%,-50%) rotate(-45deg);
+    }
+     
+}
+
+.container {
+    width: 100%;
+    // min-height: 600px;
+    // margin: 50px auto;
+    // padding-bottom: 50%;
+    overflow: hidden; 
+    box-sizing: border-box;
+
+    @include slider (5) {
+    }
+}
+
+
+
