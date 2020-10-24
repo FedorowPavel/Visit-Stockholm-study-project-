@@ -1,9 +1,9 @@
 #progress_line {
     position: fixed;
     left: 0;
-    top: 113px;
+    top: 60px;
     width: 0%;
     height: 3px;
-    z-index: 30;
+    z-index: 3;
     background: rgb(81, 147, 221);
 }

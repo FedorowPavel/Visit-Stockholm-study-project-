@@ -95,7 +95,7 @@ html, body {
     position: relative;
 }
 
-.header__link:hover {
+.header__list li:hover{
      background-color: rgb(185, 134, 57);
 }
 

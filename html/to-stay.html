@@ -4,7 +4,7 @@
 <head>
     <title>Visit Stockholm / To stay</title>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="images/favicon-20-20.png">
+    <link rel="shortcut icon" href="../images/favicon-20-20.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -14,13 +14,14 @@
 
     <link rel="stylesheet" type="text/css" href="../css/style-stay.css">
     <link rel="stylesheet" href="../css/burger_menu_style.css">
+    <link rel="stylesheet" href="../css/progress-bar.css">
 
 
 </head>
 
 
-<body class="bg-light">
-
+<body class="bg-light" id="top">
+    <div id="progress_line"></div>
     <div class="top-button">
         <a href="#top"></a>
         <span></span>
@@ -137,7 +138,7 @@
 
                     <div class="jumbotron-fluid p-5 text-white">
 
-                        <h1 class="display-4 text-center my-5  text-shadow text-uppercase">Stockholm
+                        <h1 class=" text-center my-5  text-shadow text-uppercase">Stockholm
                             welcomes you!</h1>
                         <p class="lead text-center my-3 text-shadow ">Here you can find and choose place to stay in
                             Stockholm for a
@@ -216,7 +217,7 @@
                 </div>
 
                 <!-- карусель -->
-                <div class="col-md-12 bgc-light-black  p-5 ">
+                <div class="col-md-12 bgc-light-black  p-4 p-lg-5 ">
                     <h2 class="text-white mb-5 col-12 p-0 text-uppercase ">Options to stay</h2>
 
 
@@ -228,15 +229,16 @@
                         </ol>
                         <div class="carousel-inner text-white pr-5">
 
-                            <div class="carousel-item active pr-5">
-                                <div class="image-container">
-                                    <img src="../images/to-stay/to-stay-hostel-500-300.jpg"
-                                        class="d-inline-block float-left w-40 mr-5" alt="">
-                                </div>
+                            <div class="carousel-item active  align-items-center">
 
-                                <div class="d-inline  ">
+                                <img src="../images/to-stay/to-stay-hostel-500-300.jpg"
+                                    class=" rounded mx-auto d-block img-fluid" alt="">
+
+
+                                <div class=" p-3 text-center">
                                     <h4 class=" text-uppercase mt-4 ">Hostels</h4>
-                                    <p class="  ">Stockholm's hostels are your best option if you are
+                                    <p class=" carousel-text">Stockholm's hostels are your best option
+                                        if you are
                                         looking for
                                         cheap
                                         accommodation in the capital city of Sweden.
@@ -247,12 +249,15 @@
 
                             </div>
 
-                            <div class="carousel-item">
+                            <div class="carousel-item ">
                                 <img src="../images/to-stay/to-stay-hotel-500-300.jpg"
-                                    class="d-inline-block float-left w-40 mr-5" alt="">
-                                <div class="d-inline">
+                                    class=" rounded mx-auto d-block img-fluid" alt="">
+                                <div class=" p-3 text-center">
                                     <h4 class=" text-uppercase mt-4">Hotels</h4>
-                                    <p class="  ">There are a lot of hotels in Stockholm. All of them will give you
+                                    <p class="  carousel-text">There are a lot of hotels in Stockholm.
+                                        All of them
+                                        will give
+                                        you
                                         top-level swedish service.
                                     </p>
                                     <p class="price ">$$<span>$</span></p>
@@ -260,13 +265,14 @@
                                 </div>
                             </div>
 
-                            <div class="carousel-item">
+                            <div class="carousel-item ">
                                 <img src="../images/to-stay/to-stay-app-500-300.jpg"
-                                    class="d-inline-block float-left w-40 mr-5" alt="">
+                                    class="rounded mx-auto d-block img-fluid" alt="">
 
-                                <div class="d-inline pr-5">
-                                    <h4 class=" text-uppercase  mt-4">Appartments</h4>
-                                    <p class="  ">Appartments are the best way to enjoy Stockholm.
+                                <div class=" p-3 text-center">
+                                    <h4 class=" text-uppercase mt-4">Appartments</h4>
+                                    <p class=" carousel-text">Appartments are the best way to enjoy
+                                        Stockholm.
                                     </p>
                                     <p class="price ">$$$<span></span></p>
 
@@ -854,6 +860,8 @@
         <script src="../js/top_nav_burger.js"></script>
         <script src="../js/top_nav.js"></script>
         <script src="../js/up-button.js"></script>
+        <!-- <script src="../js/scroll.js"></script> -->
+        <script src="../js/progress-bar.js"></script>
 </body>
 
 </html>
