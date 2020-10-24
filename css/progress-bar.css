@@ -1,0 +1,9 @@
+#progress_line {
+    position: fixed;
+    left: 0;
+    top: 113px;
+    width: 0%;
+    height: 3px;
+    z-index: 30;
+    background: rgb(81, 147, 221);
+}
