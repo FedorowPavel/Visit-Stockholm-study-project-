@@ -1,5 +1,5 @@
 .wrapper {
-    margin-left: 139px;
+    margin-left: 140px;
     display: grid;
     grid-template-columns: 1fr 20%;
     transition: 0.2s ease;
@@ -9,7 +9,7 @@
 
 
 .transport__nav {
-    width: 139px;
+    width: 140px;
     background-color: rgb(185, 134, 57);
     min-height: 100vh;
     transition: 0.2s ease;
@@ -49,6 +49,7 @@
 .nav__item:hover {
     background-color: rgb(219, 219, 219);
     
+    
 }
 
 .nav__item a {
@@ -59,15 +60,18 @@
 
 .nav__item span {
     display: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.5);
     padding-left: 20px;
     text-transform: uppercase;
     font-size: 1.5rem;
     transition:  0.2s;
-    
 }
 
 .nav__item:hover span {
+    color: black;
+}
+
+.transport__nav:hover span {
     display: block;
 }
 
@@ -114,7 +118,7 @@ section {
 
 nav:hover+.wrapper{
     /* margin-left: 250px; */
-    transform: translate(100px);
+    transform: translate(99px);
 }
 
 
