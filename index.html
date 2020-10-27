@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
     <title>Visit Stockholm Home</title>
+
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="images/favicon-20-20.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="images/favicon-20-20.png">
     <link rel="stylesheet" type="text/css" href="css/common-styles.css">
     <link rel="stylesheet" type="text/css" href="css/style-index.css">
     <link rel="stylesheet" href="wow/animate.css">
@@ -16,27 +18,18 @@
     <link rel="stylesheet" href="css/progress-bar.css">
 
     <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
-
-
 </head>
 
 
 <body>
-    <div id="progress_line"></div>
-    <div class="top-button">
-        <a href="#top"></a>
-        <span></span>
-    </div>
 
     <div id="top" class="container-wrapper">
 
-        <!-- ___________________ header-menu__________________ -->
-
         <header class="header">
-            <div class="top-nav">
+            <nav class="top-nav">
                 <div class="header__body">
                     <a href="index.html" class="header__logo">
-                        <img src="images/stad.png" alt="">
+                        <img src="images/stad.png" alt="site logo">
                     </a>
                     <div class="header__burger">
                         <span></span>
@@ -65,8 +58,8 @@
                                     <a href="html/transport.html">Bus</a>
                                     <a href="html/transport.html">Taxi</a>
                                     <a href="html/transport.html">pendeltåg</a>
-                                    <a href="html/transport.html">Light rail</sa>
-                                        <a href="html/transport.html">Boat</a>
+                                    <a href="html/transport.html">Light rail</a>
+                                    <a href="html/transport.html">Boat</a>
                                 </div>
                             </li>
                             <li>
@@ -80,519 +73,369 @@
                         </ul>
                     </nav>
                 </div>
-            </div>
+            </nav>
         </header>
-        <!-- <div class="header-menu" id="topNav">
-            <div class="header-item stad">
-                <a href="#"><img src="images/stad.png" alt="stad"></a>
-            </div>
 
-            <div class="header-item nav"><a href="html/about.html" target="blank">About</a>
-                <div class=" header-dropdown">
-                    <a href="html/about.html#history">History</a>
-                    <a href="html/about.html#modern">Modern City</a>
+        <main>
+            <!-- main-image -->
+            <section class="main-image">
+                <a href="html/about.html" class="main-image-link">Stockholm</a>
+                <div class="main-image-dropdown" role="heading">
+                    Click to read about the city
                 </div>
-            </div>
+            </section>
 
-            <div class="header-item nav"><a href="html/entertainment.html" target="blank">Entertainment</a>
-                <div class="header-dropdown">
-                    <a href="html/entertainment.html#see">To see</a>
-                    <a href="html/entertainment.html#eat">To eat</a>
-                    <a href="html/entertainment.html#fun">To fun</a>
+            <!-- ___________________entertainment______________________ -->
+            <section class="entertainment-container ">
+                <div class="entertainment-header wow fadeIn">
+                    <a href="html/entertainment.html">entertainment</a>
                 </div>
-            </div>
-
-            <div class="header-item nav"><a href="html/transport.html" target="blank">Transport</a>
-                <div class="header-dropdown">
-                    <a href="html/transport.html#tbanna">T-banna</a>
-                    <a href="html/transport.html#bus">Bus</a>
-                    <a href="html/transport.html#taxi">Taxi</a>
-                    <a href="html/transport.html#pendeltag">pendeltåg</a>
-                    <a href="html/transport.html#rail">Light rail</sa>
-                        <a href="html/transport.html#boat">Boat</a>
-                </div>
-            </div>
-
-            <div class="header-item nav"><a href="html/to-stay.html" target="blank">To stay</a>
-                <div class="header-dropdown">
-                    <a href="html/to-stay.html">Hotels</a>
-                    <a href="html/to-stay.html">Hostels</a>
-                    <a href="html/to-stay.html">Appartments</a>
-                </div>
-            </div>
-
-            <div class="header-item nav icon">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-
-        </div> -->
-
-        <!--______________________ main-image___________________ -->
-
-        <div class="main-image ">
-            <a class="main-image-link" href="html/about.html">Stockholm</a>
-            <div class="main-image-dropdown ">
-                Click to read about the city
-            </div>
-        </div>
-
-        <!-- ___________________entertainment______________________ -->
-
-        <div class="entertainment-container ">
-
-            <div class="entertainment-header wow fadeIn">
-                <a href="html/entertainment.html">entertainment</a>
-            </div>
-
-
-            <div class="entertainment-item to-see wow fadeIn">
-                <div class="entertainment-image">
-                    <img src="images/to-see-600-600.jpg" alt="city sightseens">
-                    <div class="gradient-background-black">
-                        <h2 class=" ">What to see?</h2>
+                <div class="entertainment-item to-see wow fadeIn">
+                    <div class="entertainment-image">
+                        <img src="images/to-see-600-600.jpg" alt="city sightseens">
+                        <div class="gradient-background-black">
+                            <h2>What to see?</h2>
+                        </div>
                     </div>
                 </div>
-
-            </div>
-
-            <div class="entertainment-item to-eat wow fadeIn">
-
-                <div class="entertainment-image">
-                    <img src="images/to-eat-600-600.jpg" alt="food">
-                    <div class="gradient-background-black">
-                        <h2>Where to eat?</h2>
+                <div class="entertainment-item to-eat wow fadeIn">
+                    <div class="entertainment-image">
+                        <img src="images/to-eat-600-600.jpg" alt="food">
+                        <div class="gradient-background-black">
+                            <h2>Where to eat?</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="entertainment-item to-fun wow fadeIn">
-
-                <div class="entertainment-image">
-                    <img src="images/to-fun-600-600.jpg" alt="food">
-                    <div class="gradient-background-black">
-                        <h2>How to fun?</h2>
+                <div class="entertainment-item to-fun wow fadeIn">
+                    <div class="entertainment-image">
+                        <img src="images/to-fun-600-600.jpg" alt="carousel in the park">
+                        <div class="gradient-background-black">
+                            <h2>How to fun?</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-        </div>
-
-        <!-- _______________________slide-gallery________________________ -->
-
-        <!-- <div class="slide-container wow fadeIn">
-
-            <div class="slides fade">
-                <img src="images/slide-gallery/panorama-1200-600.jpg" alt="panorama">
-            </div>
-
-
-        </div> -->
-        <!-- <div class="container">
-            <div class="carousel">
-                <input type="radio" id="carousel-1" name="carousel[]" checked>
-                <input type="radio" id="carousel-2" name="carousel[]">
-                <input type="radio" id="carousel-3" name="carousel[]">
-                <input type="radio" id="carousel-4" name="carousel[]">
-                <input type="radio" id="carousel-5" name="carousel[]">
-
-                <ul class="carousel__items">
-                    <li class="carousel__item">
-                        <img src="images/slide-gallery/panorama-1200-600.jpg" alt="panorama">
-                    </li>
-                    <li class="carousel__item">
-                        <img src="images/slide-gallery/arhipelago-1200-600.jpg" alt="">
-                    </li>
-                    <li class="carousel__item">
-                        <img src="images/slide-gallery/day-panorama-1200-600.jpg" alt="">
-                    </li>
-                    <li class="carousel__item">
-                        <img src="images/slide-gallery/night-panorama-1200-600.jpg" alt="">
-                    </li>
-                    <li class="carousel__item">
-                        <img src="images/slide-gallery/evening-panorama-1200-600.jpg" alt="">
-                    </li>
-                </ul>
-
-                <div class="carousel__nav">
-                    <label for="carousel-1"></label>
-                    <label for="carousel-2"></label>
-                    <label for="carousel-3"></label>
-                    <label for="carousel-4"></label>
-                    <label for="carousel-5"></label>
-                </div>
-
-                <div class="carousel__prev">
-                    <label for="carousel-1"></label>
-                    <label for="carousel-2"></label>
-                    <label for="carousel-3"></label>
-                    <label for="carousel-4"></label>
-                    <label for="carousel-5"></label>
-                </div>
-
-                <div class="carousel__next">
-                    <label for="carousel-1"></label>
-                    <label for="carousel-2"></label>
-                    <label for="carousel-3"></label>
-                    <label for="carousel-4"></label>
-                    <label for="carousel-5"></label>
-                </div>
-
-            </div>
-        </div> -->
-
-        <div class="carousel">
-            <div class="slides">
-                <div class="slide active"><img src="images/slide-gallery/arhipelago-1200-600.jpg" alt=""></div>
-                <div class="slide"><img src="images/slide-gallery/day-panorama-1200-600.jpg" alt=""></div>
-                <div class="slide"><img src="images/slide-gallery/evening-panorama-1200-600.jpg" alt=""></div>
-                <div class="slide"><img src="images/slide-gallery/night-panorama-1200-600.jpg" alt=""></div>
-                <div class="slide"><img src="images/slide-gallery/panorama-1200-600.jpg" alt=""></div>
-            </div>
-
-            <div class="buttons">
-                <a id="prev" class="prev"> &lsaquo; </a>
-                <a id="next" class="next"> &rsaquo; </a>
-            </div>
-        </div>
-
-
-
-        <!-- ________________________transport_______________________ -->
-
-
-        <div class="transport-container">
-
-            <div class="transport-header wow fadeIn ">
-                <a href="html/transport.html">transport</a>
-            </div>
-
-            <div class="transport-item t-banna wow fadeIn ">
-                <div class="transport-image">
-                    <img src="images/t-banna-500-500.jpg" alt="t-banna">
-                    <div class="transport-type">
-                        <span> T-banna</span>
+            <!-- _______________________slide-gallery________________________ -->
+            <section class="carousel">
+                <div class="slides">
+                    <div class="slide active"><img src="images/slide-gallery/arhipelago-1200-600.jpg" alt="arhipelago">
                     </div>
-                    <div class="transport-price">
-                        &#8364<span>4</span>
+                    <div class="slide"><img src="images/slide-gallery/day-panorama-1200-600.jpg" alt="day panorama">
+                    </div>
+                    <div class="slide"><img src="images/slide-gallery/evening-panorama-1200-600.jpg"
+                            alt="evening panorama"></div>
+                    <div class="slide"><img src="images/slide-gallery/night-panorama-1200-600.jpg" alt="night panorama">
+                    </div>
+                    <div class="slide"><img src="images/slide-gallery/panorama-1200-600.jpg" alt="panorama"></div>
+                </div>
+                <div class="buttons">
+                    <a id="prev" class="prev"> &lsaquo; </a>
+                    <a id="next" class="next"> &rsaquo; </a>
+                </div>
+            </section>
+
+            <!-- ________________________transport_______________________ -->
+            <section class="transport-container">
+                <div class="transport-header wow fadeIn ">
+                    <a href="html/transport.html">transport</a>
+                </div>
+                <div class="transport-item t-banna wow fadeIn ">
+                    <div class="transport-image">
+                        <img src="images/t-banna-500-500.jpg" alt="t-banna">
+                        <div class="transport-type">
+                            <span> T-banna</span>
+                        </div>
+                        <div class="transport-price">
+                            &#8364;<span>4</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="transport-item bus wow fadeIn">
-                <div class="transport-image">
-                    <img src="images/bus-500-500.jpg" alt="bus">
-                    <div class="transport-type">
-                        <span> Bus</span>
-                    </div>
-                    <div class="transport-price">
-                        &#8364<span>3</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="transport-item taxi wow fadeIn">
-                <div class="transport-image">
-                    <img src="images/taxi-500-500.jpg" alt="taxi">
-                    <div class="transport-type">
-                        <span> Taxi</span>
-                    </div>
-                    <div class="transport-price">
-                        &#8364<span>20</span>
+                <div class="transport-item bus wow fadeIn">
+                    <div class="transport-image">
+                        <img src="images/bus-500-500.jpg" alt="bus">
+                        <div class="transport-type">
+                            <span> Bus</span>
+                        </div>
+                        <div class="transport-price">
+                            &#8364;<span>3</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="transport-item pendeltåg wow fadeIn">
-                <div class="transport-image">
-                    <img src="images/pendeltag-500-500.jpg" alt="pendeltåg">
-                    <div class="transport-type">
-                        <span> Pendeltåg</span>
-                    </div>
-                    <div class="transport-price">
-                        &#8364<span>4.5</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="transport-item light-rail wow fadeIn">
-                <div class="transport-image">
-                    <img src="images/light-rail-500-500.jpg" alt="light rail">
-                    <div class="transport-type">
-                        <span> Light rail</span>
-                    </div>
-                    <div class="transport-price">
-                        &#8364<span>3.5</span>
+                <div class="transport-item taxi wow fadeIn">
+                    <div class="transport-image">
+                        <img src="images/taxi-500-500.jpg" alt="taxi">
+                        <div class="transport-type">
+                            <span> Taxi</span>
+                        </div>
+                        <div class="transport-price">
+                            &#8364;<span>20</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="transport-item ferry wow fadeIn">
-                <div class="transport-image">
-                    <img src="images/ferry-500-500.jpg" alt="ferry">
-                    <div class="transport-type">
-                        <span> Ferry</span>
+                <div class="transport-item pendeltåg wow fadeIn">
+                    <div class="transport-image">
+                        <img src="images/pendeltag-500-500.jpg" alt="pendeltåg">
+                        <div class="transport-type">
+                            <span> Pendeltåg</span>
+                        </div>
+                        <div class="transport-price">
+                            &#8364;<span>4.5</span>
+                        </div>
                     </div>
-                    <div class="transport-price">
-                        &#8364<span>5</span>
+                </div>
+                <div class="transport-item light-rail wow fadeIn">
+                    <div class="transport-image">
+                        <img src="images/light-rail-500-500.jpg" alt="light rail">
+                        <div class="transport-type">
+                            <span> Light rail</span>
+                        </div>
+                        <div class="transport-price">
+                            &#8364;<span>3.5</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-        <!-- __________________facts_______________________ -->
-
-        <div class="facts-container wow bounceInLeft     ">
-
-            <div class="facts-header ">
-                <h1>Facts you have to know about Stockholm</h1>
-            </div>
-
-            <div class="fact-item fact1 ">
-                <h2>Population</h2>
-                <p>Stockholm is the capital and most populous urban area of Sweden as well as in Scandinavia. <b>
-                        975,904</b>
-                    people live in the
-                    municipality, approximately <b>1.6 million</b> in the urban area, and <b>2.4 million</b> in the
-                    metropolitan area.
-                </p>
-            </div>
-
-            <div class="fact-item fact2">
-                <h2>Island City</h2>
-                <p>The Swedish capital is situated on <b>14 islands</b>, connected by <b>57 bridges</b>. Therefore, no
-                    matter where
-                    you happen to find
-                    yourself, water will be close by. Stockholm has 96 beaches.
-                </p>
-            </div>
-
-            <div class="fact-item fact3 ">
-                <h2>The first and the largest</h2>
-                <p>Stockholm’s Royal National City Park is the first of its kind in the world. With over <b>500
-                        rooms</b> in
-                    total, the city’s
-                    Royal Palace is the world’s largest palace still used for its intended purpose.
-                </p>
-            </div>
-
-            <div class="fact-item fact4 ">
-                <h2>Airplane hostel</h2>
-                <p>Stockholm is home to the world’s first <b> airplane-hostel </b> – near the entrance to Arlanda
-                    Airport you’ll
-                    find a Boeing-747
-                    with economy-class guest house inside.
-                </p>
-            </div>
-
-            <div class="fact-item fact5 ">
-                <h2>90cm</h2>
-                <p>The city’s Mårten Trotzigs Gränd Alley is the <b> narrowest alley</b> in the world – its diameter is
-                    barely
-                    90 cm.
-                </p>
-            </div>
-
-            <div class="fact-item fact6 ">
-                <h2>1270</h2>
-                <p>Stockholm’s <b> oldest</b> remaining <b>building</b> – the <i> Riddarholmskyrkan</i> – is used as the
-                    final resting
-                    place of
-                    Swedish monarchs.
-                    It was built in 1270.
-                </p>
-            </div>
-
-            <div class="fact-item fact7">
-                <h2>Nobel</h2>
-                <p>Since 1901, Stockholm has been the permanent hosting place of <b> Nobel Prize </b> ceremonies.
-                    Everyone who
-                    receives the prize
-                    signs in the guestbook of the Nobel Museum’s café, and here you can try food they eat after the
-                    celebration. The entire
-                    “Nobel ceremony” menu for one person will cost you around 200 Euros – more than enough to make you
-                    feel special. What's
-                    more, when you're dining, keep in mind that you may be sitting on the chair belonging to Barack
-                    Obama or the Dalai Lama.
-                </p>
-            </div>
-
-            <div class="fact-item fact8">
-                <h2>Nature</h2>
-                <p>In Stockholm, fishing and picking berries and mushrooms is allowed <b> everywhere</b> – even on
-                    private
-                    territories. To own a
-                    boat or small motor ship you won’t need any permits. No license is required to steer a ship, either,
-                    and you can even
-                    build your own vessel anywhere on the shore. The people of Stockholm own around 200,000 boats.
-                </p>
-            </div>
-
-            <div class="fact-item fact9">
-                <h2>Stockholm Syndrome</h2>
-                <p>The term Stockholm Syndrome originated from one of <b> Sweden’s most famous crimes</b>. During this
-                    six-day
-                    bank siege at
-                    Norrmalmstorg in 1973, hostages began to identify with their captors. The enormous charm of career
-                    criminal Clark
-                    Olofsson is considered a key reason for this happening.
-                </p>
-            </div>
-
-            <div class="fact-item fact10">
-                <h2>Underground gallery</h2>
-                <p>The city’s <b> subway (t-banna)</b> is also known as the world’s longest art gallery, with the
-                    majority of its stations
-                    being adorned with
-                    paintings, sculptures and mosaics.
-                </p>
-            </div>
-
-            <div class="fact-item fact11">
-                <h2>Fika?!</h2>
-                <p>If a local invites you to join him or her for <i> fika</i>, they're really just asking you if you'd
-                    like to
-                    take <b> a coffee break </b>.
-                    (Usually there's also some kind of pastry involved.)
-                </p>
-            </div>
-
-            <div class="fact-item fact12">
-                <h2>The largest sphere</h2>
-                <p>Stockholm <b> Globe Arena </b> is currently the largest hemispherical building in the world.
-                </p>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ___________________to stay_________________ -->
-
-        <div class="stay-container wow fadeIn ">
-            <div class="stay-header">
-                <a href="html/to-stay.html">To stay</a>
-            </div>
-
-            <div class="stay-item hostel ">
-
-                <div class="stay-name">
-                    <h3>Hostel</h3>
+                <div class="transport-item ferry wow fadeIn">
+                    <div class="transport-image">
+                        <img src="images/ferry-500-500.jpg" alt="ferry">
+                        <div class="transport-type">
+                            <span> Ferry</span>
+                        </div>
+                        <div class="transport-price">
+                            &#8364;<span>5</span>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <div class="stay-options">
-                    <h3>Options</h3>
-                    <ul>
-                        <li>- comfort</li>
-                        <li>- safety</li>
-                        <li>+ kitchen</li>
-                    </ul>
-                    <h3>Price</h3>
-                    <p>$</p>
+            <!-- __________________facts_______________________ -->
+            <section class="facts-container wow bounceInLeft">
+                <div class="facts-header ">
+                    <h1>Facts you have to know about Stockholm</h1>
                 </div>
+                <article class="fact-item fact1 ">
+                    <h2>Population</h2>
+                    <p>Stockholm is the capital and most populous urban area of Sweden as well as in Scandinavia. <b>
+                            975,904</b>
+                        people live in the
+                        municipality, approximately <b>1.6 million</b> in the urban area, and <b>2.4 million</b> in the
+                        metropolitan area.
+                    </p>
+                </article>
+                <article class="fact-item fact2">
+                    <h2>Island City</h2>
+                    <p>The Swedish capital is situated on <b>14 islands</b>, connected by <b>57 bridges</b>. Therefore,
+                        no
+                        matter where
+                        you happen to find
+                        yourself, water will be close by. Stockholm has 96 beaches.
+                    </p>
+                </article>
+                <article class="fact-item fact3 ">
+                    <h2>The first and the largest</h2>
+                    <p>Stockholm’s Royal National City Park is the first of its kind in the world. With over <b>500
+                            rooms</b> in
+                        total, the city’s
+                        Royal Palace is the world’s largest palace still used for its intended purpose.
+                    </p>
+                </article>
+                <article class="fact-item fact4 ">
+                    <h2>Airplane hostel</h2>
+                    <p>Stockholm is home to the world’s first <b> airplane-hostel </b> – near the entrance to Arlanda
+                        Airport you’ll
+                        find a Boeing-747
+                        with economy-class guest house inside.
+                    </p>
+                </article>
+                <article class="fact-item fact5 ">
+                    <h2>90cm</h2>
+                    <p>The city’s Mårten Trotzigs Gränd Alley is the <b> narrowest alley</b> in the world – its diameter
+                        is
+                        barely
+                        90 cm.
+                    </p>
+                </article>
+                <article class="fact-item fact6 ">
+                    <h2>1270</h2>
+                    <p>Stockholm’s <b> oldest</b> remaining <b>building</b> – the <i> Riddarholmskyrkan</i> – is used as
+                        the
+                        final resting
+                        place of
+                        Swedish monarchs.
+                        It was built in 1270.
+                    </p>
+                </article>
+                <article class="fact-item fact7">
+                    <h2>Nobel</h2>
+                    <p>Since 1901, Stockholm has been the permanent hosting place of <b> Nobel Prize </b> ceremonies.
+                        Everyone who
+                        receives the prize
+                        signs in the guestbook of the Nobel Museum’s café, and here you can try food they eat after the
+                        celebration. The entire
+                        “Nobel ceremony” menu for one person will cost you around 200 Euros – more than enough to make
+                        you
+                        feel special. What's
+                        more, when you're dining, keep in mind that you may be sitting on the chair belonging to Barack
+                        Obama or the Dalai Lama.
+                    </p>
+                </article>
+                <article class="fact-item fact8">
+                    <h2>Nature</h2>
+                    <p>In Stockholm, fishing and picking berries and mushrooms is allowed <b> everywhere</b> – even on
+                        private
+                        territories. To own a
+                        boat or small motor ship you won’t need any permits. No license is required to steer a ship,
+                        either,
+                        and you can even
+                        build your own vessel anywhere on the shore. The people of Stockholm own around 200,000 boats.
+                    </p>
+                </article>
+                <article class="fact-item fact9">
+                    <h2>Stockholm Syndrome</h2>
+                    <p>The term Stockholm Syndrome originated from one of <b> Sweden’s most famous crimes</b>. During
+                        this
+                        six-day
+                        bank siege at
+                        Norrmalmstorg in 1973, hostages began to identify with their captors. The enormous charm of
+                        career
+                        criminal Clark
+                        Olofsson is considered a key reason for this happening.
+                    </p>
+                </article>
+                <article class="fact-item fact10">
+                    <h2>Underground gallery</h2>
+                    <p>The city’s <b> subway (t-banna)</b> is also known as the world’s longest art gallery, with the
+                        majority of its stations
+                        being adorned with
+                        paintings, sculptures and mosaics.
+                    </p>
+                </article>
+                <article class="fact-item fact11">
+                    <h2>Fika?!</h2>
+                    <p>If a local invites you to join him or her for <i> fika</i>, they're really just asking you if
+                        you'd
+                        like to
+                        take <b> a coffee break </b>.
+                        (Usually there's also some kind of pastry involved.)
+                    </p>
+                </article>
+                <article class="fact-item fact12">
+                    <h2>The largest sphere</h2>
+                    <p>Stockholm <b> Globe Arena </b> is currently the largest hemispherical building in the world.
+                    </p>
+                </article>
+            </section>
 
-            </div>
-
-            <div class="stay-item hotel ">
-                <div class="stay-name">
-                    <h3>Hotel</h3>
+            <!-- ___________________to stay section_________________ -->
+            <section class="stay-container wow fadeIn ">
+                <div class="stay-header">
+                    <a href="html/to-stay.html">To stay</a>
                 </div>
-
-                <div class="stay-options">
-                    <h3>Options</h3>
-                    <ul>
-                        <li>+ comfort</li>
-                        <li>+ safety</li>
-                        <li>- kitchen</li>
-                    </ul>
-                    <h3>Price</h3>
-                    <p>$$</p>
+                <div class="stay-item hostel ">
+                    <div class="stay-name">
+                        <h3>Hostel</h3>
+                    </div>
+                    <div class="stay-options">
+                        <h3>Options</h3>
+                        <ul>
+                            <li>- comfort</li>
+                            <li>- safety</li>
+                            <li>+ kitchen</li>
+                        </ul>
+                        <h3>Price</h3>
+                        <p>$</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="stay-item appartments ">
-                <div class="stay-name">
-                    <h3>Appartment</h3>
+                <div class="stay-item hotel ">
+                    <div class="stay-name">
+                        <h3>Hotel</h3>
+                    </div>
+                    <div class="stay-options">
+                        <h3>Options</h3>
+                        <ul>
+                            <li>+ comfort</li>
+                            <li>+ safety</li>
+                            <li>- kitchen</li>
+                        </ul>
+                        <h3>Price</h3>
+                        <p>$$</p>
+                    </div>
                 </div>
-
-                <div class="stay-options">
-                    <h3>Options</h3>
-                    <ul>
-                        <li>+ comfort</li>
-                        <li>+ safety</li>
-                        <li>+ kitchen</li>
-                    </ul>
-                    <h3>Price</h3>
-                    <p>$$$</p>
+                <div class="stay-item appartments ">
+                    <div class="stay-name">
+                        <h3>Appartment</h3>
+                    </div>
+                    <div class="stay-options">
+                        <h3>Options</h3>
+                        <ul>
+                            <li>+ comfort</li>
+                            <li>+ safety</li>
+                            <li>+ kitchen</li>
+                        </ul>
+                        <h3>Price</h3>
+                        <p>$$$</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
 
-        <!-- ____________footer______________ -->
-
-        <div class="footer-container">
+        <footer class="footer-container">
             <img src="images/stockholms_stad-60-60.png" alt="stad" title="stad">
             <img src="images/sweden-60.png" alt="sweeden" title="sweeden">
             <div class="footer-item">
-                <h3>&#xa9 Visit Stockholm</h3>
+                <h3>&#xa9; Visit Stockholm</h3>
             </div>
-
             <div class="footer-item">
                 <p>Social Media</p>
                 <ul>
-                    <li><a href="#"><img src="images/icons/icon-facebook-20-20.png" alt="to facebook" target="blank"
-                                title="to facebook"></a></li>
-                    <li><a href="#"><img src="images/icons/icon-inst-20-20.png" alt="to facebook" target="blank"
-                                title="to instagramm"></a>
+                    <li><a href="facebook.com" target="blank"><img src="images/icons/icon-facebook-20-20.png"
+                                alt="to facebook" title="to facebook"></a></li>
+                    <li><a href="instagramm.com" target="blank"><img src="images/icons/icon-inst-20-20.png"
+                                alt="to instagramm" title="to instagramm"></a>
                     </li>
-                    <li><a href="#"><img src="images/icons/icon-google-20-20.png" alt="to facebook" target="blank"
-                                title="to google"></a>
+                    <li><a href="google.com" target="blank"><img src="images/icons/icon-google-20-20.png"
+                                alt="to google" title="to google"></a>
                     </li>
-                    <li><a href="#"><img src="images/icons/icon-twitter-20-20.png" alt="to facebook" target="blank"
-                                title="to twitter"></a>
+                    <li><a href="twitter.com" target="blank"><img src="images/icons/icon-twitter-20-20.png"
+                                alt="to twitter" title="to twitter"></a>
                     </li>
                 </ul>
             </div>
-
             <div class="footer-item">
                 <p>Contact us: <a href="mailto:stochklom_stad@gmail.com"
                         title="send us an email">stochklom_stad@gmail.com</a></p>
-
             </div>
-
             <div class="footer-item bottom-item">
                 <p>Designed by <a href="mailto:pasha_fedorow@mail.ru" title="pasha_fedorow@mail.ru">Pavel Fedorow</a>
                 </p>
             </div>
-
             <div class="footer-item bottom-item">
                 <p>2020</p>
             </div>
-        </div>
+        </footer>
+
+    </div>
+
+    <!-- progress-bar -->
+    <div id="progress_line"></div>
+
+    <!-- to-top button -->
+    <div class="top-button">
+        <a href="#top"></a>
+        <span></span>
+    </div>
 
 
 
-
-
-
-        <script src="js/script-carousel.js"></script>
-        <script src="jquery/jquery-3.5.1.js"></script>
-        <script src="js/scroll.js"></script>
-        <script src="js/top_nav_burger.js"></script>
-        <script src="js/progress-bar.js"></script>
-        <script src="js/up-button.js"></script>
-
-        <script src="wow/wow.min.js"></script>
-        <script>
-            new WOW().init();
-        </script>
+    <script src="js/script-carousel.js"></script>
+    <script src="jquery/jquery-3.5.1.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/top_nav_burger.js"></script>
+    <script src="js/progress-bar.js"></script>
+    <script src="js/up-button.js"></script>
+    <!-- wow effects library intialisation -->
+    <script src="wow/wow.min.js"></script>
+    <script> new WOW().init(); </script>
 </body>
-
-
-
-
 
 </html>
