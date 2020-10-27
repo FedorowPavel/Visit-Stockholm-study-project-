@@ -640,9 +640,13 @@ iframe {
         padding: 0;
         margin: 0;
         position: fixed;
-        /* top: 60px; */
         z-index: 3;
     }
+
+    .transport__nav:hover span {
+        display: none;
+    }
+
 
     .nav__item {
         display: flex;
