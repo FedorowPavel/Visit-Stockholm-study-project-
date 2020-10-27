@@ -1,140 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Visit Stockholm / Entertainment</title>
+
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="../images/favicon-20-20.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../images/favicon-20-20.png">
     <link rel="stylesheet" type="text/css" href="../css/entertainment.css">
     <link rel="stylesheet" type="text/css" href="../css/common-styles.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../css/slider-animation.css"> -->
     <link rel="stylesheet" type="text/css" href="../sass/css/cube-animation.css">
-    <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/burger_menu_style.css">
     <link rel="stylesheet" href="../css/progress-bar.css">
 
+    <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body id="top">
-    <div id="progress_line"></div>
-    <div class="top-button">
-        <a href="#top"></a>
-        <span></span>
-    </div>
-
-    <header class="header">
-        <div class="top-nav">
-            <div class="header__body">
-                <a href="../index.html" class="header__logo">
-                    <img src="../images/stad.png" alt="">
-                </a>
-                <div class="header__burger">
-                    <span></span>
-                </div>
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li>
-                            <a href="about.html" class="header__link">About</a>
-                            <div class=" header-dropdown">
-                                <a href="about.html#history">History</a>
-                                <a href="about.html#modern">Modern City</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="entertainment.html" class="header__link">Entertainment</a>
-                            <div class="header-dropdown">
-                                <a href="entertainment.html#see">To see</a>
-                                <a href="entertainment.html#eat">To eat</a>
-                                <a href="entertainment.html#fun">To fun</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="transport.html" class="header__link">Transport</a>
-                            <div class="header-dropdown">
-                                <a href="transport.html#tbanna">T-banna</a>
-                                <a href="transport.html#bus">Bus</a>
-                                <a href="transport.html#taxi">Taxi</a>
-                                <a href="transport.html#pendeltag">pendeltåg</a>
-                                <a href="transport.html#rail">Light rail</sa>
-                                    <a href="transport.html#boat">Boat</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="to-stay.html" class="header__link">To stay</a>
-                            <div class="header-dropdown">
-                                <a href="to-stay.html">Hotels</a>
-                                <a href="to-stay.html">Hostels</a>
-                                <a href="to-stay.html">Appartments</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
 
     <div class="container-wrapper">
 
-        <!-- ___________________ header-menu__________________ -->
-
-
-
-        <!-- <div class="header-menu" id="topNav">
-            <div class="header-item stad">
-                <a href="../index.html"><img src="../images/stad.png" alt="stad"></a>
-            </div>
-
-            <div class="header-item nav"><a href="../html/about.html" target="blank">About</a>
-                <div class=" header-dropdown">
-                    <a href="../html/about.html#history">History</a>
-                    <a href="../html/about.html#modern">Modern City</a>
+        <header class="header">
+            <div class="top-nav">
+                <div class="header__body">
+                    <a href="../index.html" class="header__logo">
+                        <img src="../images/stad.png" alt="site logo">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="about.html" class="header__link">About</a>
+                                <div class=" header-dropdown">
+                                    <a href="about.html#history">History</a>
+                                    <a href="about.html#modern">Modern</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="entertainment.html" class="header__link">Entertainment</a>
+                                <div class="header-dropdown">
+                                    <a href="entertainment.html#see">To see</a>
+                                    <a href="entertainment.html#eat">To eat</a>
+                                    <a href="entertainment.html#fun">To fun</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="transport.html" class="header__link">Transport</a>
+                                <div class="header-dropdown">
+                                    <a href="transport.html#tbanna">T-banna</a>
+                                    <a href="transport.html#bus">Bus</a>
+                                    <a href="transport.html#taxi">Taxi</a>
+                                    <a href="transport.html#pendeltag">pendeltåg</a>
+                                    <a href="transport.html#rail">Light rail</a>
+                                    <a href="transport.html#boat">Boat</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="to-stay.html" class="header__link">To stay</a>
+                                <div class="header-dropdown">
+                                    <a href="to-stay.html">Hotels</a>
+                                    <a href="to-stay.html">Hostels</a>
+                                    <a href="to-stay.html">Appartments</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
+        </header>
 
-            <div class="header-item nav"><a href="../html/entertainment.html" target="blank">Entertainment</a>
-                <div class="header-dropdown">
-                    <a href="../html/entertainment.html#see">To see</a>
-                    <a href="../html/entertainment.html#eat">To eat</a>
-                    <a href="../html/entertainment.html#fun">To fun</a>
-                </div>
-            </div>
+        <main class="entertainment-content">
 
-            <div class="header-item nav"><a href="../html/transport.html" target="blank">Transport</a>
-                <div class="header-dropdown">
-                    <a href="../html/transport.html#tbanna">T-banna</a>
-                    <a href="../html/transport.html#bus">Bus</a>
-                    <a href="../html/transport.html#taxi">Taxi</a>
-                    <a href="../html/transport.html#pendeltag">pendeltåg</a>
-                    <a href="../html/transport.html#rail">Light rail</sa>
-                        <a href="../html/transport.html#boat">Boat</a>
-                </div>
-            </div>
-
-            <div class="header-item nav"><a href="../html/to-stay.html" target="blank">To stay</a>
-                <div class="header-dropdown">
-                    <a href="../html/to-stay.html">Hotels</a>
-                    <a href="../html/to-stay.html">Hostels</a>
-                    <a href="../html/to-stay.html">Appartments</a>
-                </div>
-            </div>
-
-            <div class="header-item nav icon">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-
-        </div> -->
-
-        <!-- _________________main-content_____________________ -->
-        <div class="entertainment-content">
-
-            <div class="common-info">
+            <section class="common-info">
                 <h1>Entertainment</h1>
+                <!-- animation block -->
                 <div class="slider">
-
                     <div class="slider-container">
                         <div class="cube">
                             <div class="sides left"><img src="../images/slide-gallery/4/1.gif" alt=""></div>
@@ -197,10 +141,8 @@
                             <div class="sides back"><img src="../images/slide-gallery/1/1.gif" alt=""></div>
                         </div>
                     </div>
-
-
                 </div>
-                <div class="common-info-asside">
+                <section class="common-info-asside">
                     <p> <img src="../images/icons/to-see.png" alt="to-see"> The capital of Sweden is a cosmopolitan city
                         with a
                         tangled old town, stylish young districts, a
@@ -224,23 +166,16 @@
                         experiences, and events that appeal to a variety of tastes. Some of these experiences are
                         seasonal and I’ve denoted them
                         if so.</p>
-                </div>
+                </section>
+            </section>
 
-
-            </div>
-
-            <biv class="main-info">
-
-                <!-- _____________to see section_______________ -->
-
-                <button id="see" class="accordion-btn ">Know what to see</button>
-
+            <section class="main-info">
+                <!-- to see section -->
+                <button class="accordion-btn ">Know what to see</button>
                 <div class="entertainment-section">
-
-
                     <div class="entertaiment-item to-see-item">
                         <img src="../images/entertaiment/to-see/1-gamla-stan.jpg" alt="gamla stan" title="gamla stan">
-                        <button id="see" class="accordion-btn to-see-btn"> Gamla Stan</button>
+                        <button class="accordion-btn to-see-btn"> Gamla Stan</button>
                         <p>Dating from the 1200s and crammed with must-see sights, attractions, cafés, authentic
                             restaurants, and boutique shops,
                             the area of Gamla Stan (Old Town) is a living-breathing museum in its own right. For
@@ -257,11 +192,10 @@
                             winding streets. Mysterious
                             vaults and ancient frescoes lurk behind picturesque facades.</p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
                         <img src="../images/entertaiment/to-see/2-vassa-museum.jpg" alt="vassa museum"
                             title="vassa museum">
-                        <button id="see" class="accordion-btn to-see-btn">Vassa Museum</button>
+                        <button class="accordion-btn to-see-btn">Vassa Museum</button>
                         <p>The incredible Vasa battleship was intended to be the pride of the Swedish Imperial fleet,
                             yet in a forerunner of the
                             Titanic disaster centuries later, sank on its maiden voyage in 1628. An amazing salvage
@@ -276,10 +210,9 @@
                             free if you are under 18
                             years of age.</p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
                         <img src="../images/entertaiment/to-see/3-Djurgarden.jpg" alt="Djurgarden" title="Djurgarden">
-                        <button id="see" class="accordion-btn to-see-btn">Djurgården</button>
+                        <button class="accordion-btn to-see-btn">Djurgården</button>
                         <p>A tranquil oasis in the heart of the city, the island of Djurgården draws tourists and locals
                             alike, particularly during
                             the summer months of long lazy days and short nights. The park forms part of the Royal
@@ -297,10 +230,9 @@
                             from the city center (15 minutes). Drop by the Djurgården visitor center for more
                             information.</p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
                         <img src="../images/entertaiment/to-see/4-Skansen-museum.jpg" alt="Skansen" title="Skansen">
-                        <button id="see" class="accordion-btn to-see-btn">Skansen museum</button>
+                        <button class="accordion-btn to-see-btn">Skansen museum</button>
                         <p>The oldest open-air museum in the world, Skansen, on the island of Djurgården, is a wonderful
                             attraction for families,
                             particularly those with young children. Not only will you be treated to an authentic taste
@@ -317,11 +249,10 @@
                             Smörgåsbord pay a visit to the
                             Solliden Restaurant.</p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
                         <img src="../images/entertaiment/to-see/5-Royal-Palace.jpg" alt="Royal Palace"
                             title="Royal Palace">
-                        <button id="see" class="accordion-btn to-see-btn">Royal Palace</button>
+                        <button class="accordion-btn to-see-btn">Royal Palace</button>
                         <p>A visit here could be a day out in itself. Located by the water's edge on the periphery of
                             Gamla Stan, this is the
                             official residence of the King of Sweden. Interestingly, the Queen's residence lies
@@ -336,11 +267,10 @@
                             the Tre Kronor (Three
                             Crowns) Museum, and Treasury. Don't miss the daily changing of the guard.</p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
                         <img src="../images/entertaiment/to-see/6-Fotografiska.jpg" alt="Fotografiska"
                             title="Fotografiska">
-                        <button id="see" class="accordion-btn to-see-btn">Fotografiska</button>
+                        <button class="accordion-btn to-see-btn">Fotografiska</button>
                         <p>Fotografiska is Stockholm's museum of contemporary photography and hosts an eclectic mix of
                             exhibitions throughout the
                             year. The complex encompasses a cafe, restaurant, store, and gallery, and from the top
@@ -355,11 +285,10 @@
                             Address: Stadsgårdshamnen 22, 11645 Stockholm
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
-                        <img src="../images/entertaiment/to-see/7-The City Hall.jpg" alt="The City Hall"
+                        <img src="../images/entertaiment/to-see/7-The-City-Hall.jpg" alt="The City Hall"
                             title="The City Hall">
-                        <button id="see" class="accordion-btn to-see-btn">The City Hall</button>
+                        <button class="accordion-btn to-see-btn">The City Hall</button>
                         <p>Nestled at the water's edge and topped by three golden crowns, the City Hall is one of
                             Stockholm's most iconic buildings
                             and stars in countless images and postcards of the city. Dating from 1923, the hall opened
@@ -372,10 +301,9 @@
                             mosaics adorning its walls. A
                             particular treat is the chance to view the city from the famous tower.</p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
-                        <img src="../images/entertaiment/to-see/8-Boat Tours.jpg" alt="Boat Tours" title="Boat Tours">
-                        <button id="see" class="accordion-btn to-see-btn">Boat Tours</button>
+                        <img src="../images/entertaiment/to-see/8-Boat-Tours.jpg" alt="Boat Tours" title="Boat Tours">
+                        <button class="accordion-btn to-see-btn">Boat Tours</button>
                         <p>The sea flows through the arteries of Stockholm, and during the summer months, the city is
                             quite literally awash with
                             boats of all shapes and sizes. Many city-dwellers own summer houses on the islands of the
@@ -388,11 +316,10 @@
                             also hop-on, hop-off options
                             with a valid ticket lasting 24 hours.</p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
-                        <img src="../images/entertaiment/to-see/9-Moderna Museet.jpg" alt="Moderna Museet"
+                        <img src="../images/entertaiment/to-see/9-Moderna-Museet.jpg" alt="Moderna Museet"
                             title="Moderna Museet">
-                        <button id="see" class="accordion-btn to-see-btn">Moderna Museet</button>
+                        <button class="accordion-btn to-see-btn">Moderna Museet</button>
                         <p>At Moderna Museet, you can dip your toes into one of Europe's foremost collections of art
                             from the 20th century to
                             today, featuring works by artists such as Picasso, Dali, Derkert, and Matisse. The museum
@@ -409,11 +336,10 @@
                             Address: Exercisplan 2, 11142 Stockholm
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
-                        <img src="../images/entertaiment/to-see/10-Royal National City Park.jpg"
+                        <img src="../images/entertaiment/to-see/10-Royal-National-City-Park.jpg"
                             alt="Royal National City Park" title="Royal National City Park">
-                        <button id="see" class="accordion-btn to-see-btn">Royal National City Park</button>
+                        <button class="accordion-btn to-see-btn">Royal National City Park</button>
                         <p>The right-to-roam (allemansrätten) is an indelible part of the Swedish psyche. The Royal
                             National City Park is a
                             six-mile-long, 27 square-kilometer green space surrounding and snaking into Stockholm and
@@ -428,10 +354,9 @@
                             swimming spots, and craggy
                             hilltops. It truly is hard to believe you're in the middle of a thriving capital city.</p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
                         <img src="../images/entertaiment/to-see/11-stermalm.jpg" alt="Östermalm" title="Östermalm">
-                        <button id="see" class="accordion-btn to-see-btn">Östermalm</button>
+                        <button class="accordion-btn to-see-btn">Östermalm</button>
                         <p>If it's Stockholm designer chic you're after, then look no further. Östermalm is the most
                             exclusive district in the
                             city. Exclusive international labels rub shoulders with high-class Scandinavian design. On
@@ -445,11 +370,10 @@
                             neighborhood. Be sure to drop by Östermalmshallen for the absolute best in Swedish fresh
                             food and produce.</p>
                     </div>
-
                     <div class="entertaiment-item to-see-item">
-                        <img src="../images/entertaiment/to-see/12-SkyView The Globe.jpg" alt="SkyView The Globe"
+                        <img src="../images/entertaiment/to-see/12-SkyView-The-Globe.jpg" alt="SkyView The Globe"
                             title="SkyView The Globe">
-                        <button id="see" class="accordion-btn to-see-btn">SkyView The Globe</button>
+                        <button class="accordion-btn to-see-btn">SkyView The Globe</button>
                         <p>Situated on Stockholm's southern fringe, SkyView takes you to the top of the world's largest
                             spherical building, the
                             Ericsson Globe, one of Stockholm's modern landmarks. From 130 meters above sea level, you'll
@@ -462,21 +386,15 @@
                             Address: Globentorget 2, 12177 Stockholm
                         </p>
                     </div>
-
                     <div class="map">
                         <script type="text/javascript" charset="utf-8" async
                             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a377d744e9f0a5453d9ff845edab9c37b61e36a10dfbf30f912bd7dbcf085e2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-
                     </div>
-
                 </div>
 
-                <!-- __________________to eat section_________________ -->
-
+                <!-- to eat section -->
                 <button id="eat" class="accordion-btn">Know where to eat</button>
-
                 <div class="entertainment-section">
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/1-scandic-sjofartshotellet.jpg"
                             alt="scandic-sjofartshotellet" title="scandic sjofartshotellet">
@@ -486,7 +404,6 @@
                             enjoy your glass of champagne
                             in the company of the Stockholm waterfront.</p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/2-bleck-rectangle.jpg" alt="bleck" title="bleck">
                         <div class="price">$$</div>
@@ -499,7 +416,6 @@
                             room with a stove. The menu
                             is focused on smaller dishes to share. Bleck also serves brunch on weekends.</p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/3-tak_bred.jpg" alt="Tak" title="Tak">
                         <div class="price">$$$</div>
@@ -510,7 +426,6 @@
                             techniques and Swedish
                             ingredients with a breathtaking view of central Stockholm.</p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/4-restaurangen-fotografiska.jpg" alt="fotografiska"
                             title="fotografiska">
@@ -524,7 +439,6 @@
                             fish, so be sure to let your
                             waiter know if you're vegan or vegetarian.</p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/5-karamellan.jpg" alt="karamellan" title="karamellan">
                         <div class="price">$</div>
@@ -535,7 +449,6 @@
                             to Drottningholm Palace and
                             treat yourself to a delicious meal.</p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/6-pasdart.jpg" alt="Pas d'Art" title="Pas d'Art">
                         <div class="price">$$$$</div>
@@ -548,7 +461,6 @@
                             main courses and Swedish
                             ingredients.</p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/7-meatballs-for-the-people.jpg"
                             alt="Meatballs for the People" title="Meatballs for the People">
@@ -560,7 +472,6 @@
                             like elk, beef, and salmon. Sit
                             down at a rustic wooden table or take your meatballs to go.</p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/8-gbg_bred.jpg" alt="Göteborg" title="Göteborg">
                         <div class="price">$$$</div>
@@ -571,7 +482,6 @@
                             just like the town of
                             Göteborg, you can reach it either by boat or tram.</p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/9-cirkus-restaurang.jpg" alt="Cirkus Restaurant"
                             title="Cirkus Restaurant">
@@ -587,7 +497,6 @@
                             open-air bar and
                             restaurant.</p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/10-portal_bred.jpg" alt="Portal" title="Portal">
                         <div class="price">$$</div>
@@ -599,7 +508,6 @@
                             all over Sweden. The pleasantly unpretentious light wood decor creates a cozy atmosphere.
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/11-berns-asiatiska.jpg" alt="Berns Asiatiska"
                             title="Berns Asiatiska">
@@ -614,7 +522,6 @@
 
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-eat-item">
                         <img src="../images/entertaiment/to-eat/12-malarpaviljongen.jpg" alt="Mälarpaviljongen"
                             title="Mälarpaviljongen">
@@ -628,24 +535,18 @@
 
                         </p>
                     </div>
-
                     <div class="map">
                         <script type="text/javascript" charset="utf-8" async
                             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a377d744e9f0a5453d9ff845edab9c37b61e36a10dfbf30f912bd7dbcf085e2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-
                     </div>
-
                 </div>
 
-                <!-- _______________to fun section_________________ -->
-
+                <!-- to fun section-->
                 <button id="fun" class="accordion-btn">Know how to fun</button>
-
                 <div class="entertainment-section">
-
                     <div class="entertaiment-item to-fun-item">
                         <img src="../images/entertaiment/to-fun/1-icebar.jpg" alt="ice bar" title="ice bar">
-                        <button id="see" class="accordion-btn to-see-btn">Drink in ice bar</button>
+                        <button class="accordion-btn to-see-btn">Drink in ice bar</button>
                         <p>It wouldn’t be a visit to Scandinavia without some sort of winter activity—regardless of what
                             season it is—which is why
                             a visit to the ICEBAR is literally one of the cool things to do in Stockholm. Found in the
@@ -654,11 +555,10 @@
                             preserve the intricately
                             carved ice sculptures.</p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
                         <img src="../images/entertaiment/to-fun/2-undergraund-gallery.jpg" alt="ice bar"
                             title="ice bar">
-                        <button id="see" class="accordion-btn to-see-btn">Ride along underground gallery</button>
+                        <button class="accordion-btn to-see-btn">Ride along underground gallery</button>
                         <p>You don’t have to head inside a museum to view incredible art installations in Stockholm—in
                             fact, it’s as simple as
                             buying a ticket and riding the metro. Nearly 100 of the city’s underground subway stations
@@ -667,10 +567,9 @@
                             terminals with vibrant
                             sculptures, paintings and mosaics, each with a different theme..</p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
                         <img src="../images/entertaiment/to-fun/3-gronalund.jpg" alt="gronalund" title="gronalund">
-                        <button id="see" class="accordion-btn to-see-btn">Experience thrills at Gröna Lund</button>
+                        <button class="accordion-btn to-see-btn">Experience thrills at Gröna Lund</button>
                         <p>Those looking for a change of pace from historical walking tours and relaxing boat rides will
                             want to head to Gröna
                             Lund, which is one of the best things to do in Stockholm with kids. Also found on
@@ -682,11 +581,10 @@
                             surrounding archipelago.
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
-                        <img src="../images/entertaiment/to-fun/4-glide on the boat.jpg" alt="glide on the boat"
+                        <img src="../images/entertaiment/to-fun/4-glide-on-the-boat.jpg" alt="glide on the boat"
                             title="glide on the boat">
-                        <button id="see" class="accordion-btn to-see-btn">Glide through the city on a boat ride</button>
+                        <button class="accordion-btn to-see-btn">Glide through the city on a boat ride</button>
                         <p>Since Stockholm is situated on the shores of the Baltic Sea and built on 14 different
                             islands, it’s no wonder the city
                             is so proud of its maritime heritage. A great way to get a new vantage point is by enjoying
@@ -694,9 +592,8 @@
                             sail through the different districts which are linked by more than 50 bridges.
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
-                        <img src="../images/entertaiment/to-fun/5-nuclear reactor.png" alt="nuclear reactor"
+                        <img src="../images/entertaiment/to-fun/5-nuclear-reactor.png" alt="nuclear reactor"
                             title="nuclear reactor">
                         <button id="see" class="accordion-btn to-see-btn">Visit R1 Nuclear Reactor</button>
                         <p>The reactor hall has since been opened to visitors and as of April 2007 the reactor hall can
@@ -705,10 +602,9 @@
                             dance performances.
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
                         <img src="../images/entertaiment/to-fun/6-teleskope.jpg" alt="teleskope" title="teleskope">
-                        <button id="see" class="accordion-btn to-see-btn">Visit teleskope</button>
+                        <button class="accordion-btn to-see-btn">Visit teleskope</button>
                         <p>The telescope was made in 2007 by the German company Astro Optik and weighs a baffling 2.3
                             metric tonnes, nearly 5,100
                             pounds. Originally it was used for environmental physics studies and was later taken over by
@@ -718,10 +614,9 @@
                             of supernovas.
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
                         <img src="../images/entertaiment/to-fun/7-Tradgarden.JPG" alt="Trädgården" title="Trädgården">
-                        <button id="see" class="accordion-btn to-see-btn">Open-air club Trädgården</button>
+                        <button class="accordion-btn to-see-btn">Open-air club Trädgården</button>
                         <p>No trip to Stockholm between May and September is complete without a visit to the city’s
                             outdoor party spaces. Rooftop
                             bars Slakthuset, in a former slaughterhouse, and Tak, on a revamped square in brutalist
@@ -732,10 +627,9 @@
 
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
                         <img src="../images/entertaiment/to-fun/8-Langholmen.JPG" alt="Långholmen" title="Långholmen">
-                        <button id="see" class="accordion-btn to-see-btn">Swimming off Långholmen island</button>
+                        <button class="accordion-btn to-see-btn">Swimming off Långholmen island</button>
                         <p>For most people, Stockholm doesn’t immediately conjure up images of tanning on an idyllic
                             beach followed by an afternoon
                             dip. But you can, in fact, do both, right in the city centre. Just a 15-minute stroll from
@@ -745,11 +639,10 @@
                             sandy front, it’s surrounded by flat rocks and a grassy bank where locals love to picnic.
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
                         <img src="../images/entertaiment/to-fun/9-shoping.jpg" alt=" DROTTNINGGATAN"
                             title=" DROTTNINGGATAN">
-                        <button id="see" class="accordion-btn to-see-btn">Shopping on DROTTNINGGATAN</button>
+                        <button class="accordion-btn to-see-btn">Shopping on DROTTNINGGATAN</button>
                         <p>You could spend an entire day making your way through the many shops that line Drottninggatan
                             and still not visit them
                             all. While it sometimes seems there is an H&M every few steps don’t miss out on the other
@@ -761,21 +654,19 @@
                             home to plenty of tourist shops, as well as some great restaurants and cafés.
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
-                        <img src="../images/entertaiment/to-fun/10-roof walk.jpg" alt="roof walk" title="roof walk">
-                        <button id="see" class="accordion-btn to-see-btn">Roof tour</button>
+                        <img src="../images/entertaiment/to-fun/10-roof-walk.jpg" alt="roof walk" title="roof walk">
+                        <button class="accordion-btn to-see-btn">Roof tour</button>
                         <p>Unwind and enjoy the panoramic views, you will be dressed in a harness attached to a wire
                             system that runs the length of
                             our walk. Walk on a metal walkway designed especially for the tour itself, relax - you are
                             safe!
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
-                        <img src="../images/entertaiment/to-fun/11-helicopter tour.jpg" alt="helicopter tour"
+                        <img src="../images/entertaiment/to-fun/11-helicopter-tour.jpg" alt="helicopter tour"
                             title="helicopter tour">
-                        <button id="see" class="accordion-btn to-see-btn">Helicopter tour</button>
+                        <button class="accordion-btn to-see-btn">Helicopter tour</button>
                         <p>Fly in a helicopter over Stockholm, the archipelago and the Baltic sea during a 20 minutes
                             comprehensive aerial tour.
                             Pass over the city's canals, bridges and central islands while listening to informative
@@ -785,10 +676,9 @@
                             Hall).
                         </p>
                     </div>
-
                     <div class="entertaiment-item to-fun-item">
-                        <img src="../images/entertaiment/to-fun/12-ice hockey.jpg" alt="ice hockey" title="ice hockey">
-                        <button id="see" class="accordion-btn to-see-btn">Ice hockey</button>
+                        <img src="../images/entertaiment/to-fun/12-ice-hockey.jpg" alt="ice hockey" title="ice hockey">
+                        <button class="accordion-btn to-see-btn">Ice hockey</button>
                         <p>Of all team sports, ice hockey is probably the one most closely associated with Sweden. With
                             multiple World Cup and
                             Olympic-medals in their cabinet, both Sweden’s women's –and men’s national team is a force
@@ -798,71 +688,68 @@
                             the world. The most prominent clubs in Stockholm are Djurgården and AIK.
                         </p>
                     </div>
-
                     <div class="map">
                         <script type="text/javascript" charset="utf-8" async
                             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a377d744e9f0a5453d9ff845edab9c37b61e36a10dfbf30f912bd7dbcf085e2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-
                     </div>
-
-
                 </div>
-            </biv>
+            </section>
+        </main>
 
-
-
-        </div>
-
-        <!-- ____________footer______________ -->
-
-        <div class="footer-container">
+        <!-- footer -->
+        <footer class="footer-container">
             <img src="../images/stockholms_stad-60-60.png" alt="stad" title="stad">
             <img src="../images/sweden-60.png" alt="sweeden" title="sweeden">
             <div class="footer-item">
-                <h3>&#xa9 Visit Stockholm</h3>
+                <h3>&#xa9; Visit Stockholm</h3>
             </div>
-
             <div class="footer-item">
                 <p>Social Media</p>
                 <ul>
-                    <li><a href="#"><img src="../images/icons/icon-facebook-20-20.png" alt="to facebook" target="blank"
-                                title="to facebook"></a></li>
-                    <li><a href="#"><img src="../images/icons/icon-inst-20-20.png" alt="to facebook" target="blank"
-                                title="to instagramm"></a>
+                    <li><a href="facebook.com" target="blank"><img src="../images/icons/icon-facebook-20-20.png"
+                                alt="to facebook" title="to facebook"></a></li>
+                    <li><a href="instagramm.com" target="blank"><img src="../images/icons/icon-inst-20-20.png"
+                                alt="to instagramm" title="to instagramm"></a>
                     </li>
-                    <li><a href="#"><img src="../images/icons/icon-google-20-20.png" alt="to facebook" target="blank"
-                                title="to google"></a>
+                    <li><a href="google.com" target="blank"><img src="../images/icons/icon-google-20-20.png"
+                                alt="to google" title="to google"></a>
                     </li>
-                    <li><a href="#"><img src="../images/icons/icon-twitter-20-20.png" alt="to facebook" target="blank"
-                                title="to twitter"></a>
+                    <li><a href="twitter.com" target="blank"><img src="../images/icons/icon-twitter-20-20.png"
+                                alt="to twitter" title="to twitter"></a>
                     </li>
                 </ul>
             </div>
-
             <div class="footer-item">
                 <p>Contact us: <a href="mailto:stochklom_stad@gmail.com"
                         title="send us an email">stochklom_stad@gmail.com</a>
                 </p>
-
             </div>
-
             <div class="footer-item bottom-item">
                 <p>Designed by <a href="mailto:pasha_fedorow@mail.ru" title="pasha_fedorow@mail.ru">Pavel Fedorow</a>
                 </p>
             </div>
-
             <div class="footer-item bottom-item">
                 <p>2020</p>
             </div>
-        </div>
+        </footer>
 
-        <script src="../jquery/jquery-3.5.1.js"></script>
-        <script src="../js/progress-bar.js"></script>
-        <script src="../js/top_nav_burger.js"></script>
-        <script src="../js/scroll.js"></script>
-        <!-- <script src="../js/top_nav.js"></script> -->
-        <script src="../js/up-button.js"></script>
-        <script src="../js/accordion.js"></script>
+    </div>
+
+    <!-- progress-bar -->
+    <div id="progress_line"></div>
+
+    <!-- to-top button -->
+    <div class="top-button">
+        <a href="#top"></a>
+        <span></span>
+    </div>
+
+    <script src="../jquery/jquery-3.5.1.js"></script>
+    <script src="../js/progress-bar.js"></script>
+    <script src="../js/top_nav_burger.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/up-button.js"></script>
+    <script src="../js/accordion.js"></script>
 </body>
 
 </html>
