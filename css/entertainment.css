@@ -1,16 +1,7 @@
-/* .entertainment-nav {
-    display: flex;
-}
-
-.entertainment-header {
-    flex-grow: 1;
-} */
-
-
-
 .container-wrapper {
     margin-top: 60px;
 }
+
 .common-info {
     display: grid;
     grid-template-columns: minmax(auto, 1000px) minmax(400px, 1fr);
@@ -22,27 +13,28 @@
     width: 100%;
     position: relative;
 }
+
 .common-info-asside {
     display: flex;
     flex-direction: column;
-    background-color:  rgb(238, 238, 238);
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0px 0px 10px  gray inset; 
 
+    background-color:  rgb(238, 238, 238);
+    box-shadow: 0px 0px 10px  gray inset; 
 }
 
 .common-info h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: normal;
+    grid-column: 1/-1;
     padding: 15px;
     margin: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
     background-color: rgb(185, 134, 57) ;
     letter-spacing: 0.1rem;
     color: whitesmoke;
-    grid-column: 1/-1;
-
 }
 
 .common-info p {
@@ -53,8 +45,8 @@
     margin: 5px;
     max-width: 500px;
     border-radius: 2px;
+
     font-size: 1rem;
-    /* text-align: justify; */
     text-indent: 2rem;
     line-height: 1.1rem;
     background-color: rgb(219, 219, 219);
@@ -64,82 +56,60 @@
 }
 
 p img {
-    /* float: left; */
     margin: 0 10px 0 0;
 }
 
 .accordion-btn {
-  background-color: rgb(185, 134, 57);
-  color: whitesmoke;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 1.5rem;
-  transition: 0.2s;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgb(50, 52, 59);
-  position: relative;
+    position: relative;
+    padding: 18px;
+    width: 100%;
+    border: none;
+
+    background-color: rgb(185, 134, 57);
+    color: whitesmoke;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    font-size: 1.5rem;
+    transition: 0.2s;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(50, 52, 59);
 }
 
+.accordion-btn::after,
+.accordion-btn::before {
+    position: absolute;
+    right: 7px;
+    top: 50%;
 
-
-.accordion-btn::after {
     content: ' ';
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 10px 8px 0 7px;
-    border-color: rgb(50, 52, 59) transparent transparent transparent;
+}
 
-    position: absolute;
-    right: 7px;
-    top: 50%;
+.accordion-btn::after {
     transform: translate(0, -50%);
+    border-color: rgb(50, 52, 59) transparent transparent transparent;
 }
 
 .accordion-btn::before {
-    content: ' ';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 8px 0 7px;
-    border-color:  rgb(185, 134, 57) transparent transparent transparent;
-    position: absolute;
-    right: 7px;
-    top: 50%;
     transform: translate(-100%, -50%) rotate(180deg);
+    border-color:  rgb(185, 134, 57) transparent transparent transparent;
 }
 
- /* .up-btn {
-    display: none;
-    content: ' ';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 8px 0 7px;
-    border-color:  rgb(219, 219, 219) transparent transparent transparent;
-    position: absolute;
-    right: 7px;
-    top: 50%;
-    transform: translate(-100%, -50%) rotate(180deg);
-} */
-
 .active, .accordion-btn:hover {
-  background-color: rgb(50, 52, 59);
-  color:  rgb(185, 134, 57);
+    background-color: rgb(50, 52, 59);
+    color:  rgb(185, 134, 57);
     letter-spacing: 0.3rem;
 }
 
 .entertainment-content {
     display: grid;
     margin: 0 auto;
-    /* max-width: 1200px; */
-
 
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -153,18 +123,17 @@ p img {
     letter-spacing: 0.2rem;
 }
 
-
-
 .entertainment-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-items: center;
     justify-content: center;
-    grid-gap: 20px;
+    grid-column-gap: 10px;
     box-sizing: border-box;
 
     border-left: 10px solid rgb(81, 147, 221);
-    padding: 0 20px;
+    padding: 0 10px;
+    
     margin: 0;
     background-color: rgb(219, 219, 219);
     max-height: 0;
@@ -175,12 +144,10 @@ p img {
 .entertaiment-item {
     box-sizing: border-box;
     overflow: hidden;
-    /* position: relative; */
 }
 
 .entertaiment-item img {
     display: block;
-    /* position: relative; */
     padding-top: 10px;
     max-width: 100%;
     width: 100%;
@@ -193,7 +160,6 @@ p img {
     border: none;
     position: relative;
     border-bottom: 1px solid gray;
-    /* width: 100%; */
 }
 
 .entertaiment-item p {
@@ -212,7 +178,6 @@ p img {
 .price {
     position: relative;
     transform: translateY(-120%); 
-    /* text-align: right; */
     font-size: 2rem;
     font-weight: bold;
     color: rgb(185, 134, 57);
@@ -221,108 +186,5 @@ p img {
 
 .map {
     grid-column: 1/-1;
-}
-
-@media screen and (max-width: 1180px) {
-    .common-info {
-        grid-template-columns: 1fr;
-    }
-
-    .common-info-asside {
-        flex-direction: row;
-        align-items: stretch;
-    }
-}
-
-@media screen and (max-width: 950px) {
-    .common-info-asside {
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    .common-info p {
-        max-width: 700px;
-    }
-
-}
-
-
-@media screen and (max-width: 768px) {
-
-    .common-info h1 {
-        font-size: 2.5rem;
-        padding: 25px;
-    }
-    
-    
-
-    .slider {
-        overflow: hidden;
-        width: 100%;
-        /* transform: scale(0.95); */
-        
-    }
-
-    .common-info p {
-        
-        max-width: 100%;
-        font-size: 1.3rem;
-        line-height: 2rem;
-
-    }
-
-    .accordion-btn {
- 
-        padding: 10px;
-        font-size: 1.5rem;
-
-    }
-
-    .entertaiment-item p {
-        font-size: 1.3rem;
-        line-height: 2rem;
-    }
-
-    .entertainment-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-    
-
-}   
-
-@media screen and (max-width: 425px) {
-    
-    .common-info p,
-    .entertaiment-item p {
-        font-size: 1.3rem;
-        line-height: 1.8rem;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: justify;
-    }
-
-    .common-info p {
-        flex-direction: column;
-    }
-
-    p img {
-        padding: 10px;
-    }
-
-    .slider {
-        overflow-x: scroll;
-    }
-
-    
-
-    
-
-
-    /* .slider {
-        display: none;
-    } */
-
 }
     
