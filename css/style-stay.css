@@ -2,14 +2,10 @@
     height: auto;
 }
 
-
 .container-fluid {
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
-    /* letter-spacing: 0.1rem; */
 }
-
-
 
 .header-img {
     background: url('../images/to-stay/1.jpg') no-repeat;
@@ -32,12 +28,11 @@
     text-decoration: none;
     color: whitesmoke;
 }
+/* menu */
 
 .modal-content {
-background-color: rgb(185, 134, 57) !important; 
+    background-color: rgb(185, 134, 57) !important; 
 }
-
-
 
 button:hover {
     background-color: rgb(185, 134, 57) !important;
@@ -45,7 +40,6 @@ button:hover {
 }
 
 .bgc-light-black {
-    
     background: url('../images/icons/bed.png') center center;
     background-size: 10px 10px;
     background-color:rgba(50, 52, 59, 0.99);
@@ -83,7 +77,6 @@ button {
     margin-right: -25px;
 }
 
-
 .carousel-item .d-inline {
     box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.75);
 }
@@ -99,44 +92,35 @@ button {
     color:rgba(204, 204, 204, 0.397);
 }
 
-.bg-gamla-stan {
-    background: url('../images/to-stay/gamla\ stan.jpg');
-    background-size: cover;
+.bg-gamla-stan,
+.bg-hornstull,
+.bg-odenplan ,
+.bg-djurgarden,
+.bg-sundbyberg {
+     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
+}
+
+.bg-gamla-stan {
+    background: url('../images/to-stay/gamla\ stan.jpg');
 }
 
 .bg-hornstull {
     background: url('../images/to-stay/hornstull.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
 }
 
 .bg-odenplan {
     background: url('../images/to-stay/odenplan.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
 }
 
 .bg-djurgarden {
     background: url('../images/to-stay/djurgarden.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
 }
 
 .bg-sundbyberg {
     background: url('../images/to-stay/Sundbyberg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
 }
 
 .bg-gamla-stan p,
@@ -154,25 +138,7 @@ button {
     color: black;
 }
 
-@media screen (max-width: 1024px;) {
-    .container-fluid .carousel-text{
-    font-size: 0.5rem;
-    }
-    
 
-    .image-container img {
-        width: 100px !important;
-
-    }
-}
-    
-    
-    
-}
-
-@media screen (max-width: 768px;) {
-    
-}
-        
+   
 
 
