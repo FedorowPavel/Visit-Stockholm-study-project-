@@ -1,0 +1,138 @@
+@media screen and (max-width: 768px) {
+
+    .about-header {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        width: 95%;
+        grid-template-columns: 70% 30%;
+        grid-gap: 1px;
+
+        font-size: 1.3rem;
+    }
+
+    .about-text,
+    .about-image {
+        grid-column: 1/ 2;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    .asside-content {
+        grid-column: 2/3;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .asside-content figcaption {
+       font-size: 0.9rem; 
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .about-header {
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        grid-gap: 1px;
+
+        font-size: 1.4rem;
+    }
+
+    .asside-content {
+        grid-column: 1/2;
+        grid-row: 9/10;
+        flex-direction: row;
+        overflow-x: scroll;
+        align-items: flex-start;
+        position: relative;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+        background-color:  rgb(231, 231, 231);
+    }
+
+    .asside-content figure {
+        grid-row: 3/4;
+    }
+    
+
+    .asside-content h3,
+    .asside-content p  {
+        position: sticky;
+        top: 0;
+        left: 0;
+
+        white-space: nowrap;
+        text-align: left;
+        
+
+        grid-column: 1/-1;
+    }
+
+    .asside-content p {
+        grid-row: 2/3;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content figcaption {
+        white-space: nowrap;
+    }
+
+    .modern-asside {
+        grid-row: 21/22;
+    }
+
+    .about-text,
+    .about-image {
+        grid-column: 1/ 2;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+
+    .modal-content {
+        width: 98%;
+    }
+
+    .modern-asside img {
+        max-width: 250px;
+        min-height: 250px;
+        border-radius: 10px;
+        border: 3px solid  rgb(185, 134, 57);
+    }
+
+
+    .asside-content img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 298px) {
+    
+    .about-text,
+    .about-image {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    figure img {
+        height: 200px;
+    }
+}
