@@ -1,11 +1,14 @@
-var line = document.getElementById('progress_line');
-window.addEventListener('scroll', progressBar);
+var scrollLine = document.getElementById("progress_line");
 
-function progressBar(e) {
-    var windowScroll = document.body.scrollTop ||
-        document.documentElement.scrollTop;
-    var windowHeight = document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-    var width_progress_line = windowScroll / windowHeight * 100;
-    line.style.width = width_progress_line + '%';
-}
+window.addEventListener('scroll', function () {
+    var documentHeigth = document.body.clientHeight;
+
+    var scrollHeigth = window.scrollY;
+
+    var windowHeigth = window.innerHeight;
+
+    var scrollPercent = (scrollHeigth / (documentHeigth - windowHeigth)) * 100;
+
+    scrollLine.style.width = scrollPercent + "%";
+
+});
