@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="sass/css/carusel-SCSS.css">
     <link rel="stylesheet" href="css/style-carousel.css">
     <link rel="stylesheet" href="css/progress-bar.css">
+    <link rel="stylesheet" href="css/city-tour-modal.css">
 
     <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
 </head>
@@ -83,6 +84,34 @@
                 <a href="html/about.html" class="main-image-link">Stockholm</a>
                 <div class="main-image-dropdown" role="heading">
                     Click to read about the city
+                </div>
+                <div class="city-tour-btn" id="openBtn">
+                    <span>Order Your City Tour</span>
+                </div>
+                <div class="modal" id="modal">
+                    <div class="modal__content">
+                        <div class="modal__form">
+                            <form action="" class="form">
+                                <input type="radio" id="standart" name="tour-form" checked>
+                                <label for="standart" class="form-header">Standart</label>
+
+                                <input type="radio" id="vip" name="tour-form">
+                                <label for="vip" class="form-header">VIP</label>
+                                <br>
+
+                                <label for="name" class="small-label">Full name:</label>
+                                <input type="text" id="name" class="input-text">
+
+                                <label for="name" class="small-label">Email:</label>
+                                <input type="email" id="name" class="input-text">
+
+                                <input type="submit" value="order">
+
+                            </form>
+                        </div>
+                        <span id="closeBtn"><i class="fas fa-times"></i></span>
+                    </div>
+
                 </div>
             </section>
 
@@ -429,7 +458,7 @@
 
 
 
-
+    <script src="js/city-tour-modal.js"></script>
     <script src="js/script-carousel.js"></script>
     <script src="jquery/jquery-3.5.1.js"></script>
     <script src="js/scroll.js"></script>

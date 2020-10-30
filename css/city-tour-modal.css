@@ -1,0 +1,155 @@
+.city-tour-btn {
+    position: absolute;
+    left: -180px;
+    top: 10%;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    /* box-sizing: border-box; */
+
+    background-color:  whitesmoke;
+    border: 1px solid whitesmoke;
+    text-align: right;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: gray;
+    transition: all 0.4s ease-out;
+    animation: Shadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.city-tour-btn span {
+    display: block;
+}
+
+.city-tour-btn:hover {
+    left: -20px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    background-color:    gray;
+    color: whitesmoke;
+}
+
+@keyframes Shadow {
+    0%  { box-shadow: 0px 0px 20px -2px   gray}
+    50% { box-shadow: 0px 0px 10px -5px  gray}
+    100%  { box-shadow: 0px 0px 20px -2px   gray}
+}
+
+
+/* modal */
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.modal__content {
+    font-size: 2rem;
+    width: auto;
+}
+
+.modal__content span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background:  rgb(219, 219, 219);
+    color:  rgb(50, 52, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__form {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color:rgb(219, 219, 219);
+    color:  rgb(50, 52, 59) ;
+
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+
+
+.modal__form input[type="radio"] {
+    display: none;
+}
+
+.modal__form .form-header {
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 7px solid rgb(219, 219, 219);
+    flex-basis: 50;
+    padding: 5px 30px;
+    color: rgba(50, 52, 59, 0.6);
+    cursor: pointer;
+}
+
+
+.modal__form input[type="radio"]:checked + .form-header {
+    border-bottom: 7px solid  rgb(50, 52, 59) ;
+    color: rgb(50, 52, 59);
+    
+    transition: 0.3s;
+}
+
+.modal__form input[type="submit"] {
+    display: block;
+    appearance: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color:rgb(185, 134, 57);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'oswald', sans-serif;
+    letter-spacing: 0.1rem;
+    transition: 0.2s;
+}
+
+.modal__form input[type="submit"]:hover {
+    color: rgb(50, 52, 59);
+    letter-spacing: 0.2rem;
+} 
+
+.small-label {
+    font-size: 1.5rem;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.modal__form .input-text {
+    appearance: none;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
