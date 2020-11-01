@@ -97,6 +97,7 @@
     }
 
     .slider {
+        display: none;
         overflow-x: scroll;
     }
 

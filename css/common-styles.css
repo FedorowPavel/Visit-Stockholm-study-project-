@@ -159,6 +159,8 @@ body {
 .footer-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(185, 184, 184);
     padding: 20px 20px 0 20px;
@@ -178,8 +180,9 @@ body {
 }
 
 .footer-container > img:nth-of-type(2){
-    height: 50px;
-    margin-right: 100px;
+    /* height: 50px;
+    margin-right: 100px; */
+    left: 0;
 }
 
 .footer-item {
@@ -196,6 +199,7 @@ body {
 }
 
 .footer-container p{
+    text-align: center;
     margin: 0 0 10px 0;
 }
 
