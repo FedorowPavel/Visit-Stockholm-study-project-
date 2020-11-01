@@ -118,6 +118,8 @@
 .modal__form input[type="submit"] {
     display: block;
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     border: none;
     width: 100%;
     box-sizing: border-box;
