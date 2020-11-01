@@ -170,6 +170,7 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    line-height: 30px;
 }
 
 .vip-tour {
