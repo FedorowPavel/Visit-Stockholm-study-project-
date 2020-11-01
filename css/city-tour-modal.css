@@ -120,19 +120,26 @@
     appearance: none;
     border: none;
     width: 100%;
+    box-sizing: border-box;
     cursor: pointer;
     color: whitesmoke;
-    background-color:rgb(185, 134, 57);
+    background-color: rgb(50, 52, 59);
     font-size: 2rem;
     text-transform: uppercase;
     font-family: 'oswald', sans-serif;
     letter-spacing: 0.1rem;
     transition: 0.2s;
+    
 }
 
 .modal__form input[type="submit"]:hover {
+    background-color:gray;
     color: rgb(50, 52, 59);
-    letter-spacing: 0.2rem;
+} 
+
+.modal__form input[type="submit"]:active {
+    outline: none;
+    border: none;
 } 
 
 .small-label {
@@ -149,7 +156,73 @@
     box-sizing: border-box;
     width: 90%;
     margin: 0 auto;
+    
     line-height: 30px;
     border-radius: 5px;
 }
 
+.modal__form .input-text.date {
+    margin-bottom: 10px;
+}
+
+.vip-tour {
+    width: 100%;
+    height: 0;
+    padding: 0px 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgba(185, 134, 57, 0.733);
+    transition: all 0.2s ease;
+    font-size: 1.5rem;
+}
+
+.vip-tour input {
+    display: none;
+}
+
+.vip-tour label {
+    cursor: pointer;
+}
+
+.vip-tour label::before {
+    content: ' ';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    transition: all 0.2 ease;
+}
+
+input[id='vip']:checked ~ .vip-tour {
+    height: 80px;
+}
+
+input[id='transfer']:checked + label::before,
+input[id='translator']:checked + label::before {
+    background-color: greenyellow;
+    background-image: url(../images/icons/checked.png);
+}
+
+@media screen and (max-width: 768px) {
+    .city-tour-btn {
+        font-size: 1.5rem;
+        left: -210px;
+        padding: 5px;
+    }
+    .city-tour-btn:hover {
+        left: -210px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .city-tour-btn {
+        font-size: 1rem;
+        left: -155px;
+        padding: 5px;
+    }
+    .city-tour-btn:hover {
+        left: -155px;
+    }
+}
