@@ -167,6 +167,9 @@
 .modal__form .input-text.date {
     margin-bottom: 10px;
     background-color: whitesmoke;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .vip-tour {
