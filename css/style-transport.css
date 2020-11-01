@@ -106,7 +106,7 @@ section {
     border-bottom: 1px solid rgb(185, 134, 57);
 }
 
-nav:hover+.wrapper{
+nav:hover + .wrapper{
     transform: translate(99px);
 }
 
@@ -119,6 +119,7 @@ nav:hover+.wrapper{
     display: flex;
     justify-content: flex-end;
     position: sticky;
+    position: -webkit-sticky;
     top: 60px;
 
     font-size: 1.5rem;

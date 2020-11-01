@@ -18,10 +18,6 @@ body {
 }
 
 
-
-
-
-
 /* ______________________header___________________ */
 
 .header {
@@ -37,7 +33,6 @@ body {
 
 .header-menu {
     display: flex;
-    /* justify-content: space-between; */
     position: sticky;
     top: 0;
     height: 60px;
@@ -158,63 +153,6 @@ body {
     color: #000000;
 } 
 
-/* .header-item:hover .header-dropdown {
-    display: block;
-} */
-
-/* @media screen and (max-width: 768px)  {
-
-    .header-menu .header-item:nth-of-type(2),
-    .header-menu .header-item:nth-of-type(3),
-    .header-menu .header-item:nth-of-type(4),
-    .header-menu .header-item:nth-of-type(5) {
-        display: none;
-    }
-
-    .header-menu .header-item:nth-of-type(6) {
-        display: flex;
-    }
-
-    .header-menu.responsive .header-item:nth-of-type(2),
-    .header-menu.responsive .header-item:nth-of-type(3),
-    .header-menu.responsive .header-item:nth-of-type(4),
-    .header-menu.responsive .header-item:nth-of-type(5)  {
-        display: flex;
-        align-items: center;
-    }
-
-    .header-menu.responsive  {
-        position: sticky;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-    }
-
-    .header-menu a:not(:last-child) {
-        display: block;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-    }
-
-    .header-item:hover .header-dropdown {
-        display: none;
-    }
-
-    .nav:hover.nav::after {
-        transition: 0.2s ease;
-        opacity: 0;
-    }
-
-    
-} */
-
-
-
-
-
-
-
 
 /* _____________footer_____________ */
 
@@ -316,8 +254,6 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    /* top: 50%;
-    transform: translateY(-25%); */
 }
 
 .top-button a::after {
@@ -358,8 +294,6 @@ body {
 .entertainment-header {
     box-sizing: border-box;
     position: relative;
-    /* position: sticky;
-    top: 60px; */
     text-align: center;
     
     color: whitesmoke;
@@ -373,7 +307,6 @@ body {
 .entertainment-header a{
     display: block;
     width: 100%;
-    /* height: 100%; */
     padding: 10px 0;
     background-color: rgb(185, 134, 57);
 
@@ -416,9 +349,6 @@ body {
         text-align: center;
     }
     
-    
-
-
 
 }
 

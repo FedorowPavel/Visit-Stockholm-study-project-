@@ -171,6 +171,7 @@
 .facts-header,
 .stay-header {
     position: sticky;
+    position: -webkit-sticky;
     top: 60px;
     z-index: 1;
 }
