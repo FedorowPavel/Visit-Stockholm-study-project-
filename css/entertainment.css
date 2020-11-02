@@ -126,7 +126,7 @@ p img {
 .entertainment-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    align-items: center;
+    align-items: start;
     justify-content: center;
     grid-column-gap: 10px;
     box-sizing: border-box;
