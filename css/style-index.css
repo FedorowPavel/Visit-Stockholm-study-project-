@@ -154,6 +154,7 @@
 .transport-image img{
     width: 100%;
     display: block;
+    opacity: 1;
 }
 
 .gradient-background-white {
