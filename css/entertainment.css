@@ -176,8 +176,9 @@ p img {
 }
 
 .price {
-    position: absolute;
-    transform: translateY(-120%); 
+    position: relative;
+    height: 0;
+    transform: translateY(-30px); 
     font-size: 2rem;
     font-weight: bold;
     color: rgb(185, 134, 57);
