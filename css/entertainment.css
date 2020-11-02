@@ -176,7 +176,7 @@ p img {
 }
 
 .price {
-    position: relative;
+    position: absolute;
     transform: translateY(-120%); 
     font-size: 2rem;
     font-weight: bold;
